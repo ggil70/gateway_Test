@@ -1,0 +1,162 @@
+#IP As400
+ip=10.3.0.7
+# Levantar Internet Banking
+portE = 7000
+
+# Levantar los sockets, comunicaci\u00f3n con As400
+    #DESARROLLO
+port1 = 7304
+    #CALIDAD
+#port1 = 7104
+
+# Puerto para el servicio EDD0395DS
+    #DESARROLLO
+port2 = 7302
+    #CALIDAD
+#port2 = 7102
+# Puerto para el servicio NIB2090PF, Auditores Externos
+    #DESARROLLO 
+port3 = 7306
+    #CALIDAD
+#port3 = 7106
+
+# Puerto para el servicio Pago servicios
+    #DESARROLLO
+port4 = 7308
+    #CALIDAD
+#port4 = 7108
+
+#Puerto para los servicios de Datos Basicos y Consolidado
+    #DESARROLLO
+port7 = 7307
+    #CALIDAD
+#port7 = 7107
+
+#Puerto para cambio de pin
+    #DESARROLLO
+port8 = 49070
+    #CALIDAD
+#port8 = 48070
+
+#Puerto para tarjeta prepagada
+    #DESARROLLO
+port9 = 7306
+    #CALIDAD
+#port9 = 7106
+
+# Conexi\u00f3n con API CELUPAGOS
+usercelu = bancoactivopruebas
+passcelu = uCGqPmTV8HiUlWmHlhN9NQ==
+aut = http://10.3.0.100:8080/api/autenticaCelupagos
+rec = http://10.3.0.100:8080/api/recargasCelupagos
+con = http://10.3.0.100:8080/api/consultasCelupagos
+
+# Levantar gr\u00e1fica del IBS
+portEIBS = 48000
+
+# TIempo de espera para conexiones de sockets
+timeout 60000
+
+#Comunicaci\u00f3n con Web Services de Calidad
+CCRWSURL =https://216.72.133.143:10004/WsDocPath/EstadosCuentaService
+CCRWSUser=binduserActivo@activo.com
+CCRWSPwd =b@c0@ct1v0!!?*
+
+
+# Conexion a base de datos
+    ##      DESARROLLO
+DBserver = 10.3.0.67:54543
+DBbasedatos = multicanal
+DBlogin = zTWIlSSgwDIow3HkPf7aXw==
+DBacceso = dIlzaTC2XTxYhTZ+h3+KPQ==
+
+    ##      CALIDAD
+#DBserver = FS10103:65040
+#DBbasedatos = multicanal_c
+#DBlogin = 7NhvbDLByp+hjYgeD0xQoA==
+#DBacceso = trQs0irdZdSomOrgpRcEAw==
+
+# Conexion a base de datos SICAD II
+#DBserverSII = FS10103
+#DBinstanciaSII = DAGENCIAS
+#DBbasedatosSII = TK_SICAD
+#DBloginSII = 5YBYPZM39hj+kR5KJT/qEQ==
+#DBaccesoSII = OXhOGM87vNsbebiyse9pKg==
+
+# Key encriptar
+clave_encriptar = bcoactivo
+
+# IDG DESARROLLO
+nombre_password_ivr = Ve9wpm0EMKNvhCNg8CPrRw==
+Idg_admin_url = https://10.3.0.215:8444/IdentityGuardAdminService/services/AdminServiceV8
+Idg_auth_url = https://10.3.0.215:8443/IdentityGuardAuthService/services/AuthenticationServiceV8
+Idg_pwd = dYjO1TmylBe96+PFOtxKow==
+Idg_group = ++vk6fKhKfBMXe43X1sTeg==
+
+# IDG CALIDAD
+#nombre_password_ivr = Ve9wpm0EMKNvhCNg8CPrRw==
+#Idg_admin_url = https://10.3.0.134:8444/IdentityGuardAdminService/services/AdminServiceV8
+#Idg_auth_url = https://10.3.0.134:8443/IdentityGuardAuthService/services/AuthenticationServiceV8
+#Idg_pwd = dYjO1TmylBe96+PFOtxKow==
+#Idg_group = ++vk6fKhKfBMXe43X1sTeg==
+
+#CANALES
+canalIVR = 1
+canalIB = 4
+canalPA = 5
+
+# Ruta controlador WS FrontEnd
+ws_controller = http://localhost/multicanal/naturales/ws/
+
+
+# Caracteres para el formato de salida para el metodo de encriptacion de SHA1
+hextab = !@#!$#@%#$%qweq34567
+
+#Servidor de Correos electr\u00f3nicos
+port = 25
+host = relaylvl3
+username = notificacion@bancoactivo.com
+email.from = Banco Activo <notificaciones@bancoactivo.com>
+
+
+#Banco Activo Manejo en el correo electronico
+bancoEmail = ACTIVO BANCO UNIVERSAL
+
+
+#Cach\u00e9 Servicio CANTV
+tiempoCache = 60
+
+#Parametros para el sms
+sms.db.host = VSMIRMGM01
+sms.db.name = DEV_SMS_ACTIVO
+sms.db.sp = INS_UPD_JOURNAL_COPY
+sms.db.user = zE0LLz8wsxYtoQe9um8ETw==
+sms.db.pwd = A6hKv9PVecz5+KZoI6EpLg==
+
+
+
+#parametros para consultar DB2 en el 400
+   # CALIDAD
+#as400.usuario = T+DoGxp6wUO1eWg9RR8xEg== 
+#as400.pass = T+DoGxp6wUO1eWg9RR8xEg==
+#extracredito.tabla.info = SATCC.SAPF1037
+#extracredito.tabla.detalle = SATCC.SAPF1038
+#feriados.tabla.info = ACPCYFILES.HOLYD
+#as400.lib.cyfiles = ACPCYFILES
+#as400.tabla.ref.cuenta = CPRBL
+#as400.tabla.ref.tdc = CCMST
+
+    ## DESARROLLO
+as400.usuario = /x3oWycay4vVvxOjMq2yrw==
+as400.pass = /x3oWycay4vVvxOjMq2yrw==
+extracredito.tabla.info = SATCC.SAPF1037
+extracredito.tabla.detalle = SATCC.SAPF1038
+feriados.tabla.info = ACNCYFILES.HOLYD
+as400.lib.cyfiles = ACNCYFILES
+as400.tabla.ref.cuenta = CPRBL
+as400.tabla.ref.tdc = CCMST
+userAs400 = CARMENGUZM
+passwordAs400 = 1234567890
+ 
+#Ruta imagenes
+img.url = ../../../../img

@@ -1,0 +1,2721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://servicios.gateway.activo.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://servicios.gateway.activo.com" xmlns:intf="http://servicios.gateway.activo.com" xmlns:tns1="http://beans.gateway.activo.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://servicios.gateway.activo.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://beans.gateway.activo.com"/>
+   <element name="REGISTER">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:RegisterBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="REGISTERResponse">
+    <complexType>
+     <sequence>
+      <element name="REGISTERReturn" type="tns1:RegisterResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="WSException">
+    <sequence/>
+   </complexType>
+   <element name="fault" type="impl:WSException"/>
+   <element name="IN098201">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:IN098201Bean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IN098201Response">
+    <complexType>
+     <sequence>
+      <element name="IN098201Return" type="tns1:IN098201Response"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_IMSSGDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:IMSSGDSJVBean"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_IN098201Bean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:IN098201Bean"/>
+    </sequence>
+   </complexType>
+   <element name="LNSDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:LNSDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="LNSDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="LNSDSJVReturn" type="tns1:LNSDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IN098002">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:IN098002Bean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IN098002Response">
+    <complexType>
+     <sequence>
+      <element name="IN098002Return" type="tns1:IN098002Response"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_IN098002Bean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:IN098002Bean"/>
+    </sequence>
+   </complexType>
+   <element name="STOPDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:STOPDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="STOPDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="STOPDSJVReturn" type="tns1:STOPDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_STOPDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:STOPDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="CARDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:CARDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="CARDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="CARDSJVReturn" type="tns1:CARDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="CCARDTRJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:CCARDTRJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="CCARDTRJVResponse">
+    <complexType>
+     <sequence>
+      <element name="CCARDTRJVReturn" type="tns1:CCARDTRJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_CCARDTRJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:CCARDTRJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="SUMDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:SUMDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="SUMDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="SUMDSJVReturn" type="tns1:SUMDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_ILN006001Bean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:ILN006001Bean"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_SUMDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:SUMDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="STMRDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:STMRDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="STMRDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="STMRDSJVReturn" type="tns1:STMRDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_STMSDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:STMSDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="PWDDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:PWDDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="PWDDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="PWDDSJVReturn" type="tns1:PWDDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IMSSGDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:IMSSGDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IMSSGDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="IMSSGDSJVReturn" type="tns1:IMSSGDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INCKBDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:INCKBDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INCKBDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="INCKBDSJVReturn" type="tns1:INCKBDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_INCKBDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:INCKBDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="INTRFDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:INTRFDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INTRFDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="INTRFDSJVReturn" type="tns1:INTRFDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_INTRFDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:INTRFDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="INEXTDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:INEXTDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INEXTDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="INEXTDSJVReturn" type="tns1:INEXTDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_INEXTDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:INEXTDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="TINQDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:TINQDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="TINQDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="TINQDSJVReturn" type="tns1:TINQDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_TINQDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:TINQDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="TINQDSJV2">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:TINQDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="TINQDSJV2Response">
+    <complexType>
+     <sequence>
+      <element name="TINQDSJV2Return" type="tns1:TINQDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IN098101">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:IN098101Bean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IN098101Response">
+    <complexType>
+     <sequence>
+      <element name="IN098101Return" type="tns1:IN098101Response"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_IN098101Bean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:IN098101Bean"/>
+    </sequence>
+   </complexType>
+   <element name="NIKDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:NIKDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="NIKDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="NIKDSJVReturn" type="tns1:NIKDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="BNKSRDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:BNKSRDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="BNKSRDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="BNKSRDSJVReturn" type="tns1:BNKSRDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_BNKSRDSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:BNKSRDSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="CDSDSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:CDSDSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="CDSDSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="CDSDSJVReturn" type="tns1:CDSDSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IIN091801">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:IIN091801Bean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="IIN091801Response">
+    <complexType>
+     <sequence>
+      <element name="IIN091801Return" type="tns1:IIN091801Response"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_IIN091801Bean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:IIN091801Bean"/>
+    </sequence>
+   </complexType>
+   <element name="INPYRLSJV2">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:INPYRLSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INPYRLSJV2Response">
+    <complexType>
+     <sequence>
+      <element name="INPYRLSJV2Return" type="tns1:INPYRLSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_INPYRLSJVBean">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:INPYRLSJVBean"/>
+    </sequence>
+   </complexType>
+   <element name="INPYRLSJV">
+    <complexType>
+     <sequence>
+      <element name="req" type="tns1:INPYRLSJVBean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="INPYRLSJVResponse">
+    <complexType>
+     <sequence>
+      <element name="INPYRLSJVReturn" type="tns1:INPYRLSJVResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://beans.gateway.activo.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://servicios.gateway.activo.com"/>
+   <complexType name="RegisterBean">
+    <sequence>
+     <element name="REGAC1" nillable="true" type="xsd:string"/>
+     <element name="REGAC2" nillable="true" type="xsd:string"/>
+     <element name="REGAC3" nillable="true" type="xsd:string"/>
+     <element name="REGAC4" nillable="true" type="xsd:string"/>
+     <element name="REGACN" nillable="true" type="xsd:string"/>
+     <element name="REGACP" nillable="true" type="xsd:string"/>
+     <element name="REGAS1" nillable="true" type="xsd:string"/>
+     <element name="REGAS2" nillable="true" type="xsd:string"/>
+     <element name="REGAS3" nillable="true" type="xsd:string"/>
+     <element name="REGCON" nillable="true" type="xsd:string"/>
+     <element name="REGEML" nillable="true" type="xsd:string"/>
+     <element name="REGFL1" nillable="true" type="xsd:string"/>
+     <element name="REGFL2" nillable="true" type="xsd:string"/>
+     <element name="REGIDN" nillable="true" type="xsd:string"/>
+     <element name="REGLGT" nillable="true" type="xsd:string"/>
+     <element name="REGLI1" nillable="true" type="xsd:string"/>
+     <element name="REGLI2" nillable="true" type="xsd:string"/>
+     <element name="REGLI3" nillable="true" type="xsd:string"/>
+     <element name="REGLI4" nillable="true" type="xsd:string"/>
+     <element name="REGOPP" nillable="true" type="xsd:string"/>
+     <element name="REGOPT" nillable="true" type="xsd:string"/>
+     <element name="REGPAS" nillable="true" type="xsd:string"/>
+     <element name="REGQS1" nillable="true" type="xsd:string"/>
+     <element name="REGQS2" nillable="true" type="xsd:string"/>
+     <element name="REGQS3" nillable="true" type="xsd:string"/>
+     <element name="REGSA4" nillable="true" type="xsd:string"/>
+     <element name="REGSAE" nillable="true" type="xsd:string"/>
+     <element name="REGSAI" nillable="true" type="xsd:string"/>
+     <element name="REGSAT" nillable="true" type="xsd:string"/>
+     <element name="REGSL4" nillable="true" type="xsd:string"/>
+     <element name="REGSLE" nillable="true" type="xsd:string"/>
+     <element name="REGSLI" nillable="true" type="xsd:string"/>
+     <element name="REGSLT" nillable="true" type="xsd:string"/>
+     <element name="REGSUB" nillable="true" type="xsd:string"/>
+     <element name="REGUSP" nillable="true" type="xsd:string"/>
+     <element name="REGUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ELEERR">
+    <sequence>
+     <element name="ERDF01" nillable="true" type="xsd:string"/>
+     <element name="ERDF02" nillable="true" type="xsd:string"/>
+     <element name="ERDF03" nillable="true" type="xsd:string"/>
+     <element name="ERDF04" nillable="true" type="xsd:string"/>
+     <element name="ERDF05" nillable="true" type="xsd:string"/>
+     <element name="ERDF06" nillable="true" type="xsd:string"/>
+     <element name="ERDF07" nillable="true" type="xsd:string"/>
+     <element name="ERDF08" nillable="true" type="xsd:string"/>
+     <element name="ERDF09" nillable="true" type="xsd:string"/>
+     <element name="ERDF10" nillable="true" type="xsd:string"/>
+     <element name="ERDR01" nillable="true" type="xsd:string"/>
+     <element name="ERDR02" nillable="true" type="xsd:string"/>
+     <element name="ERDR03" nillable="true" type="xsd:string"/>
+     <element name="ERDR04" nillable="true" type="xsd:string"/>
+     <element name="ERDR05" nillable="true" type="xsd:string"/>
+     <element name="ERDR06" nillable="true" type="xsd:string"/>
+     <element name="ERDR07" nillable="true" type="xsd:string"/>
+     <element name="ERDR08" nillable="true" type="xsd:string"/>
+     <element name="ERDR09" nillable="true" type="xsd:string"/>
+     <element name="ERDR10" nillable="true" type="xsd:string"/>
+     <element name="ERDS01" nillable="true" type="xsd:string"/>
+     <element name="ERDS02" nillable="true" type="xsd:string"/>
+     <element name="ERDS03" nillable="true" type="xsd:string"/>
+     <element name="ERDS04" nillable="true" type="xsd:string"/>
+     <element name="ERDS05" nillable="true" type="xsd:string"/>
+     <element name="ERDS06" nillable="true" type="xsd:string"/>
+     <element name="ERDS07" nillable="true" type="xsd:string"/>
+     <element name="ERDS08" nillable="true" type="xsd:string"/>
+     <element name="ERDS09" nillable="true" type="xsd:string"/>
+     <element name="ERDS10" nillable="true" type="xsd:string"/>
+     <element name="ERNU01" nillable="true" type="xsd:string"/>
+     <element name="ERNU02" nillable="true" type="xsd:string"/>
+     <element name="ERNU03" nillable="true" type="xsd:string"/>
+     <element name="ERNU04" nillable="true" type="xsd:string"/>
+     <element name="ERNU05" nillable="true" type="xsd:string"/>
+     <element name="ERNU06" nillable="true" type="xsd:string"/>
+     <element name="ERNU07" nillable="true" type="xsd:string"/>
+     <element name="ERNU08" nillable="true" type="xsd:string"/>
+     <element name="ERNU09" nillable="true" type="xsd:string"/>
+     <element name="ERNU10" nillable="true" type="xsd:string"/>
+     <element name="ERRNUM" nillable="true" type="xsd:string"/>
+     <element name="ERWF01" nillable="true" type="xsd:string"/>
+     <element name="ERWF02" nillable="true" type="xsd:string"/>
+     <element name="ERWF03" nillable="true" type="xsd:string"/>
+     <element name="ERWF04" nillable="true" type="xsd:string"/>
+     <element name="ERWF05" nillable="true" type="xsd:string"/>
+     <element name="ERWF06" nillable="true" type="xsd:string"/>
+     <element name="ERWF07" nillable="true" type="xsd:string"/>
+     <element name="ERWF08" nillable="true" type="xsd:string"/>
+     <element name="ERWF09" nillable="true" type="xsd:string"/>
+     <element name="ERWF10" nillable="true" type="xsd:string"/>
+     <element name="ERWRNG" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="WSResponse">
+    <sequence>
+     <element name="error" nillable="true" type="tns1:ELEERR"/>
+    </sequence>
+   </complexType>
+   <complexType name="RegisterResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="register" nillable="true" type="tns1:RegisterBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="IN098201Bean">
+    <sequence>
+     <element name="IN982FACC" nillable="true" type="xsd:string"/>
+     <element name="IN982TACC" nillable="true" type="xsd:string"/>
+     <element name="IN982USR1" nillable="true" type="xsd:string"/>
+     <element name="INT982AMT" nillable="true" type="xsd:string"/>
+     <element name="INT982DTP" nillable="true" type="xsd:string"/>
+     <element name="INT982DTP1" nillable="true" type="xsd:string"/>
+     <element name="INT982DTP2" nillable="true" type="xsd:string"/>
+     <element name="INT982TYPE" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="IMSSGDSJVBean">
+    <sequence>
+     <element name="DSJIMSCUN" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSFIN" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSKEY" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSLNKT" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSNME" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSPRD" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSSDTE" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSSTIM" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSTXT" nillable="true" type="xsd:string"/>
+     <element name="DSJIMSUSR" nillable="true" type="xsd:string"/>
+     <element name="DSJNUM" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="IN098201Response">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IMSSGDSJV" nillable="true" type="impl:ArrayOf_tns1_IMSSGDSJVBean"/>
+       <element name="IN098201" nillable="true" type="impl:ArrayOf_tns1_IN098201Bean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="LNSDSJVBean">
+    <sequence>
+     <element name="LNSACC" nillable="true" type="xsd:string"/>
+     <element name="LNSAVB" nillable="true" type="xsd:string"/>
+     <element name="LNSCCY" nillable="true" type="xsd:string"/>
+     <element name="LNSCLI" nillable="true" type="xsd:string"/>
+     <element name="LNSCUOA" nillable="true" type="xsd:string"/>
+     <element name="LNSCUOP" nillable="true" type="xsd:string"/>
+     <element name="LNSCUOV" nillable="true" type="xsd:string"/>
+     <element name="LNSFLD1" nillable="true" type="xsd:string"/>
+     <element name="LNSFLD2" nillable="true" type="xsd:string"/>
+     <element name="LNSFLD3" nillable="true" type="xsd:string"/>
+     <element name="LNSINT" nillable="true" type="xsd:string"/>
+     <element name="LNSIPY" nillable="true" type="xsd:string"/>
+     <element name="LNSLCH" nillable="true" type="xsd:string"/>
+     <element name="LNSLST1" nillable="true" type="xsd:string"/>
+     <element name="LNSLST2" nillable="true" type="xsd:string"/>
+     <element name="LNSLST3" nillable="true" type="xsd:string"/>
+     <element name="LNSMAT1" nillable="true" type="xsd:string"/>
+     <element name="LNSMAT2" nillable="true" type="xsd:string"/>
+     <element name="LNSMAT3" nillable="true" type="xsd:string"/>
+     <element name="LNSNOP1" nillable="true" type="xsd:string"/>
+     <element name="LNSNOP2" nillable="true" type="xsd:string"/>
+     <element name="LNSNOP3" nillable="true" type="xsd:string"/>
+     <element name="LNSNXP1" nillable="true" type="xsd:string"/>
+     <element name="LNSNXP2" nillable="true" type="xsd:string"/>
+     <element name="LNSNXP3" nillable="true" type="xsd:string"/>
+     <element name="LNSPMT" nillable="true" type="xsd:string"/>
+     <element name="LNSPOF" nillable="true" type="xsd:string"/>
+     <element name="LNSPPY" nillable="true" type="xsd:string"/>
+     <element name="LNSPRI" nillable="true" type="xsd:string"/>
+     <element name="LNSRTE" nillable="true" type="xsd:string"/>
+     <element name="LNSSCR" nillable="true" type="xsd:string"/>
+     <element name="LNSSTS" nillable="true" type="xsd:string"/>
+     <element name="LNSTRC" nillable="true" type="xsd:string"/>
+     <element name="LNSTRM" nillable="true" type="xsd:string"/>
+     <element name="LNSTXT1" nillable="true" type="xsd:string"/>
+     <element name="LNSTXT2" nillable="true" type="xsd:string"/>
+     <element name="LNSTXT3" nillable="true" type="xsd:string"/>
+     <element name="LNSUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="LNSDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="LNSDSJV" nillable="true" type="tns1:LNSDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="IN098002Bean">
+    <sequence>
+     <element name="e02DEAACC" nillable="true" type="xsd:string"/>
+     <element name="e02DLPDED" nillable="true" type="xsd:string"/>
+     <element name="e02DLPINT" nillable="true" type="xsd:string"/>
+     <element name="e02DLPMOR" nillable="true" type="xsd:string"/>
+     <element name="e02DLPPRI" nillable="true" type="xsd:string"/>
+     <element name="e02PYMDT1" nillable="true" type="xsd:string"/>
+     <element name="e02PYMDT2" nillable="true" type="xsd:string"/>
+     <element name="e02PYMDT3" nillable="true" type="xsd:string"/>
+     <element name="e02PYMSTS" nillable="true" type="xsd:string"/>
+     <element name="h02FLGMAS" nillable="true" type="xsd:string"/>
+     <element name="h02FLGWK1" nillable="true" type="xsd:string"/>
+     <element name="h02FLGWK2" nillable="true" type="xsd:string"/>
+     <element name="h02FLGWK3" nillable="true" type="xsd:string"/>
+     <element name="h02OPECOD" nillable="true" type="xsd:string"/>
+     <element name="h02PROGRM" nillable="true" type="xsd:string"/>
+     <element name="h02SCRCOD" nillable="true" type="xsd:string"/>
+     <element name="h02TIMSYS" nillable="true" type="xsd:string"/>
+     <element name="h02USERID" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="IN098002Response">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IN098002" nillable="true" type="impl:ArrayOf_tns1_IN098002Bean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="STOPDSJVBean">
+    <sequence>
+     <element name="STOSTPACC" nillable="true" type="xsd:string"/>
+     <element name="STOSTPAMT" nillable="true" type="xsd:string"/>
+     <element name="STOSTPDT1" nillable="true" type="xsd:string"/>
+     <element name="STOSTPDT2" nillable="true" type="xsd:string"/>
+     <element name="STOSTPDT3" nillable="true" type="xsd:string"/>
+     <element name="STOSTPFCK" nillable="true" type="xsd:string"/>
+     <element name="STOSTPFLG" nillable="true" type="xsd:string"/>
+     <element name="STOSTPPTS" nillable="true" type="xsd:string"/>
+     <element name="STOSTPRMK" nillable="true" type="xsd:string"/>
+     <element name="STOSTPTCK" nillable="true" type="xsd:string"/>
+     <element name="STOSTPUSER" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="STOPDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="STOPDSJV" nillable="true" type="impl:ArrayOf_tns1_STOPDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="CARDSJVBean">
+    <sequence>
+     <element name="CARAAD" nillable="true" type="xsd:string"/>
+     <element name="CARAC1" nillable="true" type="xsd:string"/>
+     <element name="CARAC2" nillable="true" type="xsd:string"/>
+     <element name="CARAC3" nillable="true" type="xsd:string"/>
+     <element name="CARAVC" nillable="true" type="xsd:string"/>
+     <element name="CARBAL" nillable="true" type="xsd:string"/>
+     <element name="CARCCY" nillable="true" type="xsd:string"/>
+     <element name="CARCFA" nillable="true" type="xsd:string"/>
+     <element name="CARCRL" nillable="true" type="xsd:string"/>
+     <element name="CARDU1" nillable="true" type="xsd:string"/>
+     <element name="CARDU2" nillable="true" type="xsd:string"/>
+     <element name="CARDU3" nillable="true" type="xsd:string"/>
+     <element name="CARED1" nillable="true" type="xsd:string"/>
+     <element name="CARED2" nillable="true" type="xsd:string"/>
+     <element name="CARED3" nillable="true" type="xsd:string"/>
+     <element name="CARLB1" nillable="true" type="xsd:string"/>
+     <element name="CARLB2" nillable="true" type="xsd:string"/>
+     <element name="CARLB3" nillable="true" type="xsd:string"/>
+     <element name="CARLM1" nillable="true" type="xsd:string"/>
+     <element name="CARLM2" nillable="true" type="xsd:string"/>
+     <element name="CARLM3" nillable="true" type="xsd:string"/>
+     <element name="CARLP1" nillable="true" type="xsd:string"/>
+     <element name="CARLP2" nillable="true" type="xsd:string"/>
+     <element name="CARLP3" nillable="true" type="xsd:string"/>
+     <element name="CARLSB" nillable="true" type="xsd:string"/>
+     <element name="CARNIK" nillable="true" type="xsd:string"/>
+     <element name="CARNUM" nillable="true" type="xsd:string"/>
+     <element name="CAROP1" nillable="true" type="xsd:string"/>
+     <element name="CAROP2" nillable="true" type="xsd:string"/>
+     <element name="CAROP3" nillable="true" type="xsd:string"/>
+     <element name="CARPMA" nillable="true" type="xsd:string"/>
+     <element name="CARPMC" nillable="true" type="xsd:string"/>
+     <element name="CARTYP" nillable="true" type="xsd:string"/>
+     <element name="CARUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="CARDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="CARDSJV" nillable="true" type="tns1:CARDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="CCARDTRJVBean">
+    <sequence>
+     <element name="CCATADD1" nillable="true" type="xsd:string"/>
+     <element name="CCATADD2" nillable="true" type="xsd:string"/>
+     <element name="CCATADD3" nillable="true" type="xsd:string"/>
+     <element name="CCATADD4" nillable="true" type="xsd:string"/>
+     <element name="CCATADD5" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM1" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM10" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM11" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM12" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM13" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM14" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM15" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM16" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM17" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM18" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM19" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM2" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM20" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM21" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM22" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM23" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM24" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM25" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM26" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM27" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM28" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM29" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM3" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM30" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM31" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM32" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM33" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM34" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM35" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM36" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM37" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM38" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM39" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM4" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM40" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM41" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM42" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM43" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM44" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM45" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM46" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM47" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM48" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM49" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM5" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM50" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM51" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM52" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM53" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM54" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM55" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM56" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM57" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM58" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM59" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM6" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM60" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM61" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM62" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM63" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM64" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM65" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM66" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM67" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM68" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM69" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM7" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM70" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM71" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM72" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM73" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM74" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM75" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM76" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM77" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM78" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM79" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM8" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM80" nillable="true" type="xsd:string"/>
+     <element name="CCATRAM9" nillable="true" type="xsd:string"/>
+     <element name="CCATRAMCR" nillable="true" type="xsd:string"/>
+     <element name="CCATRAMDB" nillable="true" type="xsd:string"/>
+     <element name="CCATRDAT" nillable="true" type="xsd:string"/>
+     <element name="CCATRDC1" nillable="true" type="xsd:string"/>
+     <element name="CCATRDC2" nillable="true" type="xsd:string"/>
+     <element name="CCATRDC3" nillable="true" type="xsd:string"/>
+     <element name="CCATRDC4" nillable="true" type="xsd:string"/>
+     <element name="CCATRDC5" nillable="true" type="xsd:string"/>
+     <element name="CCATRDSC" nillable="true" type="xsd:string"/>
+     <element name="CCATREOF" nillable="true" type="xsd:string"/>
+     <element name="CCATRNUM" nillable="true" type="xsd:string"/>
+     <element name="CCATROPC" nillable="true" type="xsd:string"/>
+     <element name="CCATRPRC" nillable="true" type="xsd:string"/>
+     <element name="CCATRREF" nillable="true" type="xsd:string"/>
+     <element name="CCATRTIM" nillable="true" type="xsd:string"/>
+     <element name="CCATRTYP" nillable="true" type="xsd:string"/>
+     <element name="CCATRUSR" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK1" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK2" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="CCARDTRJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="CCARDTRJV" nillable="true" type="impl:ArrayOf_tns1_CCARDTRJVBean"/>
+       <element name="CCARDTRJV2" nillable="true" type="tns1:CCARDTRJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="SUMDSJVBean">
+    <sequence>
+     <element name="SUMACN" nillable="true" type="xsd:string"/>
+     <element name="SUMAVB" nillable="true" type="xsd:string"/>
+     <element name="SUMBAL" nillable="true" type="xsd:string"/>
+     <element name="SUMCCY" nillable="true" type="xsd:string"/>
+     <element name="SUMDSC" nillable="true" type="xsd:string"/>
+     <element name="SUMFIR" nillable="true" type="xsd:string"/>
+     <element name="SUMFLG" nillable="true" type="xsd:string"/>
+     <element name="SUMNNM" nillable="true" type="xsd:string"/>
+     <element name="SUMTYP" nillable="true" type="xsd:string"/>
+     <element name="SUMUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ILN006001Bean">
+    <sequence>
+     <element name="LN61AVAILA" nillable="true" type="xsd:string"/>
+     <element name="LN61COLAMT" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEAMN" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEAMU" nillable="true" type="xsd:string"/>
+     <element name="LN61LNECCY" nillable="true" type="xsd:string"/>
+     <element name="LN61LNECUN" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEMT1" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEMT2" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEMT3" nillable="true" type="xsd:string"/>
+     <element name="LN61LNENUM" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEOCM" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEOFA" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEOP1" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEOP2" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEOP3" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEPUR" nillable="true" type="xsd:string"/>
+     <element name="LN61LNERE1" nillable="true" type="xsd:string"/>
+     <element name="LN61LNERE2" nillable="true" type="xsd:string"/>
+     <element name="LN61LNERE3" nillable="true" type="xsd:string"/>
+     <element name="LN61LNEREA" nillable="true" type="xsd:string"/>
+     <element name="LN61LNETYL" nillable="true" type="xsd:string"/>
+     <element name="LN61TYPE" nillable="true" type="xsd:string"/>
+     <element name="LN61USER" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="SUMDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="ILN006001" nillable="true" type="impl:ArrayOf_tns1_ILN006001Bean"/>
+       <element name="SUMDSJV" nillable="true" type="impl:ArrayOf_tns1_SUMDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="STMRDSJVBean">
+    <sequence>
+     <element name="RSTACC" nillable="true" type="xsd:string"/>
+     <element name="RSTCAF" nillable="true" type="xsd:string"/>
+     <element name="RSTFAM" nillable="true" type="xsd:string"/>
+     <element name="RSTFBL" nillable="true" type="xsd:string"/>
+     <element name="RSTFCK" nillable="true" type="xsd:string"/>
+     <element name="RSTFD1" nillable="true" type="xsd:string"/>
+     <element name="RSTFD2" nillable="true" type="xsd:string"/>
+     <element name="RSTFD3" nillable="true" type="xsd:string"/>
+     <element name="RSTFRC" nillable="true" type="xsd:string"/>
+     <element name="RSTTAM" nillable="true" type="xsd:string"/>
+     <element name="RSTTCK" nillable="true" type="xsd:string"/>
+     <element name="RSTTD1" nillable="true" type="xsd:string"/>
+     <element name="RSTTD2" nillable="true" type="xsd:string"/>
+     <element name="RSTTD3" nillable="true" type="xsd:string"/>
+     <element name="RSTUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="STMBDSJVBean">
+    <sequence>
+     <element name="STBACC" nillable="true" type="xsd:string"/>
+     <element name="STBATY" nillable="true" type="xsd:string"/>
+     <element name="STBAVL" nillable="true" type="xsd:string"/>
+     <element name="STBCCY" nillable="true" type="xsd:string"/>
+     <element name="STBCLI" nillable="true" type="xsd:string"/>
+     <element name="STBCTR" nillable="true" type="xsd:string"/>
+     <element name="STBCTY" nillable="true" type="xsd:string"/>
+     <element name="STBCUN" nillable="true" type="xsd:string"/>
+     <element name="STBFAX" nillable="true" type="xsd:string"/>
+     <element name="STBGAV" nillable="true" type="xsd:string"/>
+     <element name="STBHOL" nillable="true" type="xsd:string"/>
+     <element name="STBIAC" nillable="true" type="xsd:string"/>
+     <element name="STBIAD" nillable="true" type="xsd:string"/>
+     <element name="STBLP1" nillable="true" type="xsd:string"/>
+     <element name="STBLP2" nillable="true" type="xsd:string"/>
+     <element name="STBLP3" nillable="true" type="xsd:string"/>
+     <element name="STBLSP" nillable="true" type="xsd:string"/>
+     <element name="STBMA1" nillable="true" type="xsd:string"/>
+     <element name="STBMA2" nillable="true" type="xsd:string"/>
+     <element name="STBMA3" nillable="true" type="xsd:string"/>
+     <element name="STBMA4" nillable="true" type="xsd:string"/>
+     <element name="STBMGB" nillable="true" type="xsd:string"/>
+     <element name="STBMIP" nillable="true" type="xsd:string"/>
+     <element name="STBMLC" nillable="true" type="xsd:string"/>
+     <element name="STBMNB" nillable="true" type="xsd:string"/>
+     <element name="STBNA1" nillable="true" type="xsd:string"/>
+     <element name="STBNAV" nillable="true" type="xsd:string"/>
+     <element name="STBNX1" nillable="true" type="xsd:string"/>
+     <element name="STBNX2" nillable="true" type="xsd:string"/>
+     <element name="STBNX3" nillable="true" type="xsd:string"/>
+     <element name="STBOFC" nillable="true" type="xsd:string"/>
+     <element name="STBOIA" nillable="true" type="xsd:string"/>
+     <element name="STBPOB" nillable="true" type="xsd:string"/>
+     <element name="STBPRO" nillable="true" type="xsd:string"/>
+     <element name="STBSTE" nillable="true" type="xsd:string"/>
+     <element name="STBTM1" nillable="true" type="xsd:string"/>
+     <element name="STBTM2" nillable="true" type="xsd:string"/>
+     <element name="STBTM3" nillable="true" type="xsd:string"/>
+     <element name="STBUNC" nillable="true" type="xsd:string"/>
+     <element name="STBUSR" nillable="true" type="xsd:string"/>
+     <element name="STBZPC" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="STMSDSJVBean">
+    <sequence>
+     <element name="STMACC" nillable="true" type="xsd:string"/>
+     <element name="STMAMT" nillable="true" type="xsd:string"/>
+     <element name="STMBBL" nillable="true" type="xsd:string"/>
+     <element name="STMBD1" nillable="true" type="xsd:string"/>
+     <element name="STMBD2" nillable="true" type="xsd:string"/>
+     <element name="STMBD3" nillable="true" type="xsd:string"/>
+     <element name="STMCDE" nillable="true" type="xsd:string"/>
+     <element name="STMCKN" nillable="true" type="xsd:string"/>
+     <element name="STMDCC" nillable="true" type="xsd:string"/>
+     <element name="STMDRR" nillable="true" type="xsd:string"/>
+     <element name="STMEBL" nillable="true" type="xsd:string"/>
+     <element name="STMEND" nillable="true" type="xsd:string"/>
+     <element name="STMMEM" nillable="true" type="xsd:string"/>
+     <element name="STMNA1" nillable="true" type="xsd:string"/>
+     <element name="STMNA2" nillable="true" type="xsd:string"/>
+     <element name="STMNA3" nillable="true" type="xsd:string"/>
+     <element name="STMNA4" nillable="true" type="xsd:string"/>
+     <element name="STMNA5" nillable="true" type="xsd:string"/>
+     <element name="STMNA6" nillable="true" type="xsd:string"/>
+     <element name="STMNA7" nillable="true" type="xsd:string"/>
+     <element name="STMNA8" nillable="true" type="xsd:string"/>
+     <element name="STMNA9" nillable="true" type="xsd:string"/>
+     <element name="STMNAR" nillable="true" type="xsd:string"/>
+     <element name="STMNNAR" nillable="true" type="xsd:string"/>
+     <element name="STMREC" nillable="true" type="xsd:string"/>
+     <element name="STMUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="STMRDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="STMBDSJV" nillable="true" type="tns1:STMBDSJVBean"/>
+       <element name="STMSDSJV" nillable="true" type="impl:ArrayOf_tns1_STMSDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="PWDDSJVBean">
+    <sequence>
+     <element name="PWDACL" nillable="true" type="xsd:string"/>
+     <element name="PWDBPA" nillable="true" type="xsd:string"/>
+     <element name="PWDBUC" nillable="true" type="xsd:string"/>
+     <element name="PWDCCP" nillable="true" type="xsd:string"/>
+     <element name="PWDCFM" nillable="true" type="xsd:string"/>
+     <element name="PWDCMP" nillable="true" type="xsd:string"/>
+     <element name="PWDCPW" nillable="true" type="xsd:string"/>
+     <element name="PWDDTF" nillable="true" type="xsd:string"/>
+     <element name="PWDGEC" nillable="true" type="xsd:string"/>
+     <element name="PWDIAD" nillable="true" type="xsd:string"/>
+     <element name="PWDINC" nillable="true" type="xsd:string"/>
+     <element name="PWDLCA" nillable="true" type="xsd:string"/>
+     <element name="PWDLGT" nillable="true" type="xsd:string"/>
+     <element name="PWDLNP" nillable="true" type="xsd:string"/>
+     <element name="PWDMAX" nillable="true" type="xsd:string"/>
+     <element name="PWDNCH" nillable="true" type="xsd:string"/>
+     <element name="PWDNPW" nillable="true" type="xsd:string"/>
+     <element name="PWDOPR" nillable="true" type="xsd:string"/>
+     <element name="PWDPWD" nillable="true" type="xsd:string"/>
+     <element name="PWDSTS" nillable="true" type="xsd:string"/>
+     <element name="PWDTRA" nillable="true" type="xsd:string"/>
+     <element name="PWDUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="PWDDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="PWDDSJV" nillable="true" type="tns1:PWDDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="IMSSGDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IMSSGDSJV" nillable="true" type="tns1:IMSSGDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="INCKBDSJVBean">
+    <sequence>
+     <element name="DSCKBACC" nillable="true" type="xsd:string"/>
+     <element name="DSCKBBRN" nillable="true" type="xsd:string"/>
+     <element name="DSCKBNCK" nillable="true" type="xsd:string"/>
+     <element name="DSCKBUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INCKBDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IMSSGDSJV" nillable="true" type="impl:ArrayOf_tns1_IMSSGDSJVBean"/>
+       <element name="INCKBDSJV" nillable="true" type="impl:ArrayOf_tns1_INCKBDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="INTRFDSJVBean">
+    <sequence>
+     <element name="INTDESC" nillable="true" type="xsd:string"/>
+     <element name="INTFRMACC" nillable="true" type="xsd:string"/>
+     <element name="INTREF" nillable="true" type="xsd:string"/>
+     <element name="INTTOACC" nillable="true" type="xsd:string"/>
+     <element name="INTTRFAMT" nillable="true" type="xsd:string"/>
+     <element name="INTTYPE" nillable="true" type="xsd:string"/>
+     <element name="INTUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INTRFDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IMSSGDSJV" nillable="true" type="impl:ArrayOf_tns1_IMSSGDSJVBean"/>
+       <element name="INTRFDSJV" nillable="true" type="impl:ArrayOf_tns1_INTRFDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="INEXTDSJVBean">
+    <sequence>
+     <element name="INEAMT" nillable="true" type="xsd:string"/>
+     <element name="INEBNFACC" nillable="true" type="xsd:string"/>
+     <element name="INEBNFAD1" nillable="true" type="xsd:string"/>
+     <element name="INEBNFAD2" nillable="true" type="xsd:string"/>
+     <element name="INEBNFAD3" nillable="true" type="xsd:string"/>
+     <element name="INEBNKAD1" nillable="true" type="xsd:string"/>
+     <element name="INEBNKAD2" nillable="true" type="xsd:string"/>
+     <element name="INEBNKAD3" nillable="true" type="xsd:string"/>
+     <element name="INEBNKAD4" nillable="true" type="xsd:string"/>
+     <element name="INEBNKID" nillable="true" type="xsd:string"/>
+     <element name="INEBNKSN" nillable="true" type="xsd:string"/>
+     <element name="INECCY" nillable="true" type="xsd:string"/>
+     <element name="INECKN" nillable="true" type="xsd:string"/>
+     <element name="INEDTP1" nillable="true" type="xsd:string"/>
+     <element name="INEDTP2" nillable="true" type="xsd:string"/>
+     <element name="INEDTP3" nillable="true" type="xsd:string"/>
+     <element name="INEFAD1" nillable="true" type="xsd:string"/>
+     <element name="INEFAD2" nillable="true" type="xsd:string"/>
+     <element name="INEFAD3" nillable="true" type="xsd:string"/>
+     <element name="INEFFEE" nillable="true" type="xsd:string"/>
+     <element name="INEFRMACC" nillable="true" type="xsd:string"/>
+     <element name="INEIBNKID" nillable="true" type="xsd:string"/>
+     <element name="INEINTAD1" nillable="true" type="xsd:string"/>
+     <element name="INEINTAD2" nillable="true" type="xsd:string"/>
+     <element name="INEINTAD3" nillable="true" type="xsd:string"/>
+     <element name="INEINTAD4" nillable="true" type="xsd:string"/>
+     <element name="INESFMT" nillable="true" type="xsd:string"/>
+     <element name="INEUSR" nillable="true" type="xsd:string"/>
+     <element name="INEVDT1" nillable="true" type="xsd:string"/>
+     <element name="INEVDT2" nillable="true" type="xsd:string"/>
+     <element name="INEVDT3" nillable="true" type="xsd:string"/>
+     <element name="INEXPMTV" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INEXTDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IMSSGDSJV" nillable="true" type="impl:ArrayOf_tns1_IMSSGDSJVBean"/>
+       <element name="INEXTDSJV" nillable="true" type="impl:ArrayOf_tns1_INEXTDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="TINQDSJVBean">
+    <sequence>
+     <element name="TINAMT" nillable="true" type="xsd:string"/>
+     <element name="TINATY" nillable="true" type="xsd:string"/>
+     <element name="TINBB1" nillable="true" type="xsd:string"/>
+     <element name="TINBB2" nillable="true" type="xsd:string"/>
+     <element name="TINBB3" nillable="true" type="xsd:string"/>
+     <element name="TINBB4" nillable="true" type="xsd:string"/>
+     <element name="TINBB5" nillable="true" type="xsd:string"/>
+     <element name="TINBBI1" nillable="true" type="xsd:string"/>
+     <element name="TINBBI2" nillable="true" type="xsd:string"/>
+     <element name="TINBBI3" nillable="true" type="xsd:string"/>
+     <element name="TINBBI4" nillable="true" type="xsd:string"/>
+     <element name="TINBC1" nillable="true" type="xsd:string"/>
+     <element name="TINBC2" nillable="true" type="xsd:string"/>
+     <element name="TINBC3" nillable="true" type="xsd:string"/>
+     <element name="TINBC4" nillable="true" type="xsd:string"/>
+     <element name="TINBC5" nillable="true" type="xsd:string"/>
+     <element name="TINBRF" nillable="true" type="xsd:string"/>
+     <element name="TINCACC" nillable="true" type="xsd:string"/>
+     <element name="TINCAM" nillable="true" type="xsd:string"/>
+     <element name="TINCCY" nillable="true" type="xsd:string"/>
+     <element name="TINCHB" nillable="true" type="xsd:string"/>
+     <element name="TINCOA" nillable="true" type="xsd:string"/>
+     <element name="TINCOI4" nillable="true" type="xsd:string"/>
+     <element name="TINDACC" nillable="true" type="xsd:string"/>
+     <element name="TINDCY" nillable="true" type="xsd:string"/>
+     <element name="TINIB1" nillable="true" type="xsd:string"/>
+     <element name="TINIB2" nillable="true" type="xsd:string"/>
+     <element name="TINIB3" nillable="true" type="xsd:string"/>
+     <element name="TINIB4" nillable="true" type="xsd:string"/>
+     <element name="TINIB5" nillable="true" type="xsd:string"/>
+     <element name="TINID1" nillable="true" type="xsd:string"/>
+     <element name="TINID2" nillable="true" type="xsd:string"/>
+     <element name="TINID3" nillable="true" type="xsd:string"/>
+     <element name="TINIMD" nillable="true" type="xsd:string"/>
+     <element name="TINITM" nillable="true" type="xsd:string"/>
+     <element name="TINNUM" nillable="true" type="xsd:string"/>
+     <element name="TINOB1" nillable="true" type="xsd:string"/>
+     <element name="TINOB2" nillable="true" type="xsd:string"/>
+     <element name="TINOB3" nillable="true" type="xsd:string"/>
+     <element name="TINOB4" nillable="true" type="xsd:string"/>
+     <element name="TINOB5" nillable="true" type="xsd:string"/>
+     <element name="TINOBI1" nillable="true" type="xsd:string"/>
+     <element name="TINOBI2" nillable="true" type="xsd:string"/>
+     <element name="TINOBI3" nillable="true" type="xsd:string"/>
+     <element name="TINOBI4" nillable="true" type="xsd:string"/>
+     <element name="TINOC1" nillable="true" type="xsd:string"/>
+     <element name="TINOC2" nillable="true" type="xsd:string"/>
+     <element name="TINOC3" nillable="true" type="xsd:string"/>
+     <element name="TINOC4" nillable="true" type="xsd:string"/>
+     <element name="TINOC5" nillable="true" type="xsd:string"/>
+     <element name="TINOMD" nillable="true" type="xsd:string"/>
+     <element name="TINRD1" nillable="true" type="xsd:string"/>
+     <element name="TINRD2" nillable="true" type="xsd:string"/>
+     <element name="TINRD3" nillable="true" type="xsd:string"/>
+     <element name="TINREF" nillable="true" type="xsd:string"/>
+     <element name="TINRID" nillable="true" type="xsd:string"/>
+     <element name="TINRNM" nillable="true" type="xsd:string"/>
+     <element name="TINSID" nillable="true" type="xsd:string"/>
+     <element name="TINSNM" nillable="true" type="xsd:string"/>
+     <element name="TINTRM" nillable="true" type="xsd:string"/>
+     <element name="TINTYP" nillable="true" type="xsd:string"/>
+     <element name="TINUSR" nillable="true" type="xsd:string"/>
+     <element name="TINVD1" nillable="true" type="xsd:string"/>
+     <element name="TINVD2" nillable="true" type="xsd:string"/>
+     <element name="TINVD3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="TINQDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="TINQDSJV" nillable="true" type="impl:ArrayOf_tns1_TINQDSJVBean"/>
+       <element name="TINQDSJV2" nillable="true" type="tns1:TINQDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="IN098101Bean">
+    <sequence>
+     <element name="IN981AVAIL" nillable="true" type="xsd:string"/>
+     <element name="IN981BALNC" nillable="true" type="xsd:string"/>
+     <element name="IN981CCY" nillable="true" type="xsd:string"/>
+     <element name="IN981CRELI" nillable="true" type="xsd:string"/>
+     <element name="IN981CRNUM" nillable="true" type="xsd:string"/>
+     <element name="IN981DTE1" nillable="true" type="xsd:string"/>
+     <element name="IN981DTE2" nillable="true" type="xsd:string"/>
+     <element name="IN981DTE3" nillable="true" type="xsd:string"/>
+     <element name="IN981ENDFL" nillable="true" type="xsd:string"/>
+     <element name="IN981MINPY" nillable="true" type="xsd:string"/>
+     <element name="IN981NICKN" nillable="true" type="xsd:string"/>
+     <element name="IN981PAYOF" nillable="true" type="xsd:string"/>
+     <element name="IN981USR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="IN098101Response">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IN098101" nillable="true" type="impl:ArrayOf_tns1_IN098101Bean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="NIKDSJVBean">
+    <sequence>
+     <element name="NIKACC" nillable="true" type="xsd:string"/>
+     <element name="NIKCCN" nillable="true" type="xsd:string"/>
+     <element name="NIKDSC" nillable="true" type="xsd:string"/>
+     <element name="NIKNNM" nillable="true" type="xsd:string"/>
+     <element name="NIKTYP" nillable="true" type="xsd:string"/>
+     <element name="NIKUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="NIKDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="NIKDSJV" nillable="true" type="tns1:NIKDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="BNKSRDSJVBean">
+    <sequence>
+     <element name="BNKAD1" nillable="true" type="xsd:string"/>
+     <element name="BNKBRN" nillable="true" type="xsd:string"/>
+     <element name="BNKCTR" nillable="true" type="xsd:string"/>
+     <element name="BNKCTY" nillable="true" type="xsd:string"/>
+     <element name="BNKFRC" nillable="true" type="xsd:string"/>
+     <element name="BNKID" nillable="true" type="xsd:string"/>
+     <element name="BNKIN1" nillable="true" type="xsd:string"/>
+     <element name="BNKIN2" nillable="true" type="xsd:string"/>
+     <element name="BNKIN3" nillable="true" type="xsd:string"/>
+     <element name="BNKIN4" nillable="true" type="xsd:string"/>
+     <element name="BNKIN5" nillable="true" type="xsd:string"/>
+     <element name="BNKIN6" nillable="true" type="xsd:string"/>
+     <element name="BNKNME" nillable="true" type="xsd:string"/>
+     <element name="BNKPVI" nillable="true" type="xsd:string"/>
+     <element name="BNKREC" nillable="true" type="xsd:string"/>
+     <element name="BNKRUD" nillable="true" type="xsd:string"/>
+     <element name="BNKSTA" nillable="true" type="xsd:string"/>
+     <element name="BNKUSR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="BNKSRDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="BNKSRDSJV" nillable="true" type="impl:ArrayOf_tns1_BNKSRDSJVBean"/>
+       <element name="IMSSGDSJV" nillable="true" type="impl:ArrayOf_tns1_IMSSGDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="CDSDSJVBean">
+    <sequence>
+     <element name="CDSDEAACC" nillable="true" type="xsd:string"/>
+     <element name="CDSDEACCY" nillable="true" type="xsd:string"/>
+     <element name="CDSDEAIPY" nillable="true" type="xsd:string"/>
+     <element name="CDSDEAMEP" nillable="true" type="xsd:string"/>
+     <element name="CDSDEARTE" nillable="true" type="xsd:string"/>
+     <element name="CDSINTMAT" nillable="true" type="xsd:string"/>
+     <element name="CDSLSYIPD" nillable="true" type="xsd:string"/>
+     <element name="CDSMATDTE1" nillable="true" type="xsd:string"/>
+     <element name="CDSMATDTE2" nillable="true" type="xsd:string"/>
+     <element name="CDSMATDTE3" nillable="true" type="xsd:string"/>
+     <element name="CDSPRDNME" nillable="true" type="xsd:string"/>
+     <element name="CDSUSER" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="CDSDSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="CDSDSJS" nillable="true" type="tns1:CDSDSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="IIN091801Bean">
+    <sequence>
+     <element name="h01FLGMAS" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK1" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK2" nillable="true" type="xsd:string"/>
+     <element name="h01FLGWK3" nillable="true" type="xsd:string"/>
+     <element name="h01OPECOD" nillable="true" type="xsd:string"/>
+     <element name="h01PROGRM" nillable="true" type="xsd:string"/>
+     <element name="h01SCRCOD" nillable="true" type="xsd:string"/>
+     <element name="h01TIMSYS" nillable="true" type="xsd:string"/>
+     <element name="h01USERID" nillable="true" type="xsd:string"/>
+     <element name="i01ACMACC" nillable="true" type="xsd:string"/>
+     <element name="i01ACMCUN" nillable="true" type="xsd:string"/>
+     <element name="i01BALANC" nillable="true" type="xsd:string"/>
+     <element name="i01BALGBL" nillable="true" type="xsd:string"/>
+     <element name="i01BALHLD" nillable="true" type="xsd:string"/>
+     <element name="i01BALNBL" nillable="true" type="xsd:string"/>
+     <element name="i01BALUNC" nillable="true" type="xsd:string"/>
+     <element name="i01BATDT1" nillable="true" type="xsd:string"/>
+     <element name="i01BATDT2" nillable="true" type="xsd:string"/>
+     <element name="i01BATDT3" nillable="true" type="xsd:string"/>
+     <element name="i01BEGBAL" nillable="true" type="xsd:string"/>
+     <element name="i01CREDIT" nillable="true" type="xsd:string"/>
+     <element name="i01CUSCTY" nillable="true" type="xsd:string"/>
+     <element name="i01CUSIDN" nillable="true" type="xsd:string"/>
+     <element name="i01CUSNA1" nillable="true" type="xsd:string"/>
+     <element name="i01CUSNA2" nillable="true" type="xsd:string"/>
+     <element name="i01CUSNA3" nillable="true" type="xsd:string"/>
+     <element name="i01CUSNA4" nillable="true" type="xsd:string"/>
+     <element name="i01CUSTID" nillable="true" type="xsd:string"/>
+     <element name="i01DEBITS" nillable="true" type="xsd:string"/>
+     <element name="i01DSCATY" nillable="true" type="xsd:string"/>
+     <element name="i01DSCOFC" nillable="true" type="xsd:string"/>
+     <element name="i01DSCPRO" nillable="true" type="xsd:string"/>
+     <element name="i01ENDBAL" nillable="true" type="xsd:string"/>
+     <element name="i01INDOPE" nillable="true" type="xsd:string"/>
+     <element name="i01NARRAT" nillable="true" type="xsd:string"/>
+     <element name="i01NUMCHK" nillable="true" type="xsd:string"/>
+     <element name="i01NUMREC" nillable="true" type="xsd:string"/>
+     <element name="i01STADT1" nillable="true" type="xsd:string"/>
+     <element name="i01STADT2" nillable="true" type="xsd:string"/>
+     <element name="i01STADT3" nillable="true" type="xsd:string"/>
+     <element name="i01TRNCDE" nillable="true" type="xsd:string"/>
+     <element name="i01VALDT1" nillable="true" type="xsd:string"/>
+     <element name="i01VALDT2" nillable="true" type="xsd:string"/>
+     <element name="i01VALDT3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="IIN091801Response">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="IIN091801" nillable="true" type="impl:ArrayOf_tns1_IIN091801Bean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="INPYRLSJVBean">
+    <sequence>
+     <element name="PYRACC" nillable="true" type="xsd:string"/>
+     <element name="PYRAMT" nillable="true" type="xsd:string"/>
+     <element name="PYRBACC" nillable="true" type="xsd:string"/>
+     <element name="PYRBAD1" nillable="true" type="xsd:string"/>
+     <element name="PYRBAD2" nillable="true" type="xsd:string"/>
+     <element name="PYRBAD3" nillable="true" type="xsd:string"/>
+     <element name="PYRBBKA2" nillable="true" type="xsd:string"/>
+     <element name="PYRBBKAD" nillable="true" type="xsd:string"/>
+     <element name="PYRBBKN" nillable="true" type="xsd:string"/>
+     <element name="PYRBBNK" nillable="true" type="xsd:string"/>
+     <element name="PYRBNAM" nillable="true" type="xsd:string"/>
+     <element name="PYRCCY" nillable="true" type="xsd:string"/>
+     <element name="PYREOF" nillable="true" type="xsd:string"/>
+     <element name="PYRERD" nillable="true" type="xsd:string"/>
+     <element name="PYRFLG" nillable="true" type="xsd:string"/>
+     <element name="PYRIBKA2" nillable="true" type="xsd:string"/>
+     <element name="PYRIBKAD" nillable="true" type="xsd:string"/>
+     <element name="PYRIBKID" nillable="true" type="xsd:string"/>
+     <element name="PYRIBKNM" nillable="true" type="xsd:string"/>
+     <element name="PYRMEM1" nillable="true" type="xsd:string"/>
+     <element name="PYRMEM2" nillable="true" type="xsd:string"/>
+     <element name="PYRNUM" nillable="true" type="xsd:string"/>
+     <element name="PYROPC" nillable="true" type="xsd:string"/>
+     <element name="PYRPID" nillable="true" type="xsd:string"/>
+     <element name="PYRPTYP" nillable="true" type="xsd:string"/>
+     <element name="PYRSTS" nillable="true" type="xsd:string"/>
+     <element name="PYRTYP" nillable="true" type="xsd:string"/>
+     <element name="PYRUSR" nillable="true" type="xsd:string"/>
+     <element name="PYRVDD" nillable="true" type="xsd:string"/>
+     <element name="PYRVDM" nillable="true" type="xsd:string"/>
+     <element name="PYRVDY" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INPYRLSJVResponse">
+    <complexContent>
+     <extension base="tns1:WSResponse">
+      <sequence>
+       <element name="INPYRLSJV" nillable="true" type="impl:ArrayOf_tns1_INPYRLSJVBean"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="IN098201Response">
+
+      <wsdl:part element="impl:IN098201Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="STMRDSJVRequest">
+
+      <wsdl:part element="impl:STMRDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="TINQDSJV2Response">
+
+      <wsdl:part element="impl:TINQDSJV2Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="STOPDSJVResponse">
+
+      <wsdl:part element="impl:STOPDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CARDSJVRequest">
+
+      <wsdl:part element="impl:CARDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="STMRDSJVResponse">
+
+      <wsdl:part element="impl:STMRDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IIN091801Request">
+
+      <wsdl:part element="impl:IIN091801" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="TINQDSJVResponse">
+
+      <wsdl:part element="impl:TINQDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="LNSDSJVRequest">
+
+      <wsdl:part element="impl:LNSDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IN098002Response">
+
+      <wsdl:part element="impl:IN098002Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="SUMDSJVResponse">
+
+      <wsdl:part element="impl:SUMDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INCKBDSJVRequest">
+
+      <wsdl:part element="impl:INCKBDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INCKBDSJVResponse">
+
+      <wsdl:part element="impl:INCKBDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CCARDTRJVRequest">
+
+      <wsdl:part element="impl:CCARDTRJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="TINQDSJVRequest">
+
+      <wsdl:part element="impl:TINQDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="TINQDSJV2Request">
+
+      <wsdl:part element="impl:TINQDSJV2" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IN098101Request">
+
+      <wsdl:part element="impl:IN098101" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CDSDSJVRequest">
+
+      <wsdl:part element="impl:CDSDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="BNKSRDSJVRequest">
+
+      <wsdl:part element="impl:BNKSRDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INEXTDSJVResponse">
+
+      <wsdl:part element="impl:INEXTDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="WSException">
+
+      <wsdl:part element="impl:fault" name="fault">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INTRFDSJVRequest">
+
+      <wsdl:part element="impl:INTRFDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IN098101Response">
+
+      <wsdl:part element="impl:IN098101Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IMSSGDSJVResponse">
+
+      <wsdl:part element="impl:IMSSGDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IN098002Request">
+
+      <wsdl:part element="impl:IN098002" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="REGISTERRequest">
+
+      <wsdl:part element="impl:REGISTER" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="PWDDSJVRequest">
+
+      <wsdl:part element="impl:PWDDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IMSSGDSJVRequest">
+
+      <wsdl:part element="impl:IMSSGDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INPYRLSJV2Request">
+
+      <wsdl:part element="impl:INPYRLSJV2" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IIN091801Response">
+
+      <wsdl:part element="impl:IIN091801Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="NIKDSJVResponse">
+
+      <wsdl:part element="impl:NIKDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="PWDDSJVResponse">
+
+      <wsdl:part element="impl:PWDDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INTRFDSJVResponse">
+
+      <wsdl:part element="impl:INTRFDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INPYRLSJV2Response">
+
+      <wsdl:part element="impl:INPYRLSJV2Response" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="STOPDSJVRequest">
+
+      <wsdl:part element="impl:STOPDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="REGISTERResponse">
+
+      <wsdl:part element="impl:REGISTERResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INPYRLSJVResponse">
+
+      <wsdl:part element="impl:INPYRLSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="NIKDSJVRequest">
+
+      <wsdl:part element="impl:NIKDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INEXTDSJVRequest">
+
+      <wsdl:part element="impl:INEXTDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="INPYRLSJVRequest">
+
+      <wsdl:part element="impl:INPYRLSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CDSDSJVResponse">
+
+      <wsdl:part element="impl:CDSDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="LNSDSJVResponse">
+
+      <wsdl:part element="impl:LNSDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CCARDTRJVResponse">
+
+      <wsdl:part element="impl:CCARDTRJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="IN098201Request">
+
+      <wsdl:part element="impl:IN098201" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="SUMDSJVRequest">
+
+      <wsdl:part element="impl:SUMDSJV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="BNKSRDSJVResponse">
+
+      <wsdl:part element="impl:BNKSRDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="CARDSJVResponse">
+
+      <wsdl:part element="impl:CARDSJVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CoreJuridico">
+
+      <wsdl:operation name="REGISTER">
+
+         <wsdl:input message="impl:REGISTERRequest" name="REGISTERRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:REGISTERResponse" name="REGISTERResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098201">
+
+         <wsdl:input message="impl:IN098201Request" name="IN098201Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:IN098201Response" name="IN098201Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="LNSDSJV">
+
+         <wsdl:input message="impl:LNSDSJVRequest" name="LNSDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:LNSDSJVResponse" name="LNSDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098002">
+
+         <wsdl:input message="impl:IN098002Request" name="IN098002Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:IN098002Response" name="IN098002Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="STOPDSJV">
+
+         <wsdl:input message="impl:STOPDSJVRequest" name="STOPDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:STOPDSJVResponse" name="STOPDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CARDSJV">
+
+         <wsdl:input message="impl:CARDSJVRequest" name="CARDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:CARDSJVResponse" name="CARDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CCARDTRJV">
+
+         <wsdl:input message="impl:CCARDTRJVRequest" name="CCARDTRJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:CCARDTRJVResponse" name="CCARDTRJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="SUMDSJV">
+
+         <wsdl:input message="impl:SUMDSJVRequest" name="SUMDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:SUMDSJVResponse" name="SUMDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="STMRDSJV">
+
+         <wsdl:input message="impl:STMRDSJVRequest" name="STMRDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:STMRDSJVResponse" name="STMRDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="PWDDSJV">
+
+         <wsdl:input message="impl:PWDDSJVRequest" name="PWDDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:PWDDSJVResponse" name="PWDDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IMSSGDSJV">
+
+         <wsdl:input message="impl:IMSSGDSJVRequest" name="IMSSGDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:IMSSGDSJVResponse" name="IMSSGDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INCKBDSJV">
+
+         <wsdl:input message="impl:INCKBDSJVRequest" name="INCKBDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:INCKBDSJVResponse" name="INCKBDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INTRFDSJV">
+
+         <wsdl:input message="impl:INTRFDSJVRequest" name="INTRFDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:INTRFDSJVResponse" name="INTRFDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INEXTDSJV">
+
+         <wsdl:input message="impl:INEXTDSJVRequest" name="INEXTDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:INEXTDSJVResponse" name="INEXTDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="TINQDSJV">
+
+         <wsdl:input message="impl:TINQDSJVRequest" name="TINQDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:TINQDSJVResponse" name="TINQDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="TINQDSJV2">
+
+         <wsdl:input message="impl:TINQDSJV2Request" name="TINQDSJV2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:TINQDSJV2Response" name="TINQDSJV2Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098101">
+
+         <wsdl:input message="impl:IN098101Request" name="IN098101Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:IN098101Response" name="IN098101Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="NIKDSJV">
+
+         <wsdl:input message="impl:NIKDSJVRequest" name="NIKDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:NIKDSJVResponse" name="NIKDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="BNKSRDSJV">
+
+         <wsdl:input message="impl:BNKSRDSJVRequest" name="BNKSRDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:BNKSRDSJVResponse" name="BNKSRDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CDSDSJV">
+
+         <wsdl:input message="impl:CDSDSJVRequest" name="CDSDSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:CDSDSJVResponse" name="CDSDSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IIN091801">
+
+         <wsdl:input message="impl:IIN091801Request" name="IIN091801Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:IIN091801Response" name="IIN091801Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INPYRLSJV2">
+
+         <wsdl:input message="impl:INPYRLSJV2Request" name="INPYRLSJV2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:INPYRLSJV2Response" name="INPYRLSJV2Response">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INPYRLSJV">
+
+         <wsdl:input message="impl:INPYRLSJVRequest" name="INPYRLSJVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:INPYRLSJVResponse" name="INPYRLSJVResponse">
+
+       </wsdl:output>
+
+         <wsdl:fault message="impl:WSException" name="WSException">
+
+       </wsdl:fault>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CoreJuridicoSoapBinding" type="impl:CoreJuridico">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="REGISTER">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="REGISTERRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="REGISTERResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098201">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="IN098201Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="IN098201Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="LNSDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="LNSDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="LNSDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098002">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="IN098002Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="IN098002Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="STOPDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="STOPDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="STOPDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CARDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="CARDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="CARDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CCARDTRJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="CCARDTRJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="CCARDTRJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="SUMDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="SUMDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="SUMDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="STMRDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="STMRDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="STMRDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="PWDDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="PWDDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="PWDDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IMSSGDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="IMSSGDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="IMSSGDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INCKBDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="INCKBDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="INCKBDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INTRFDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="INTRFDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="INTRFDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INEXTDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="INEXTDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="INEXTDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="TINQDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="TINQDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="TINQDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="TINQDSJV2">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="TINQDSJV2Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="TINQDSJV2Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IN098101">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="IN098101Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="IN098101Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="NIKDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="NIKDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="NIKDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="BNKSRDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="BNKSRDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="BNKSRDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="CDSDSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="CDSDSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="CDSDSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="IIN091801">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="IIN091801Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="IIN091801Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INPYRLSJV2">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="INPYRLSJV2Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="INPYRLSJV2Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="INPYRLSJV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="INPYRLSJVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="INPYRLSJVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="WSException">
+
+            <wsdlsoap:fault name="WSException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CoreJuridicoService">
+
+      <wsdl:port binding="impl:CoreJuridicoSoapBinding" name="CoreJuridico">
+
+         <wsdlsoap:address location="http://localhost:8080/GatewayBancoActivo/services/CoreJuridico"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

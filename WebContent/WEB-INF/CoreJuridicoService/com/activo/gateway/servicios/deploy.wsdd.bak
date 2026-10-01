@@ -1,0 +1,634 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CoreJuridicoService WSDL service -->
+
+  <service name="CoreJuridico" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://servicios.gateway.activo.com"/>
+      <parameter name="wsdlServiceElement" value="CoreJuridicoService"/>
+      <parameter name="schemaQualified" value="http://beans.gateway.activo.com,http://servicios.gateway.activo.com"/>
+      <parameter name="wsdlServicePort" value="CoreJuridico"/>
+      <parameter name="className" value="com.activo.gateway.servicios.CoreJuridicoSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="CoreJuridico"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="REGISTER" qname="operNS:REGISTER" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:REGISTERReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:RegisterResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:RegisterBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="IN098201" qname="operNS:IN098201" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:IN098201Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:IN098201Response" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:IN098201Bean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="LNSDSJV" qname="operNS:LNSDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:LNSDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:LNSDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:LNSDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="IN098002" qname="operNS:IN098002" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:IN098002Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:IN098002Response" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:IN098002Bean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="STOPDSJV" qname="operNS:STOPDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:STOPDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:STOPDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:STOPDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="CARDSJV" qname="operNS:CARDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:CARDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:CARDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:CARDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="CCARDTRJV" qname="operNS:CCARDTRJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:CCARDTRJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:CCARDTRJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:CCARDTRJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="SUMDSJV" qname="operNS:SUMDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:SUMDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:SUMDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:SUMDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="STMRDSJV" qname="operNS:STMRDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:STMRDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:STMRDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:STMRDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="STMRDSJV5" qname="operNS:STMRDSJV5" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:STMRDSJV5Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:STMRDSJV5Response" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:STMRDSJV5Bean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="PWDDSJV" qname="operNS:PWDDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:PWDDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:PWDDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:PWDDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="IMSSGDSJV" qname="operNS:IMSSGDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:IMSSGDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:IMSSGDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:IMSSGDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="INCKBDSJV" qname="operNS:INCKBDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:INCKBDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:INCKBDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:INCKBDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="INTRFDSJV" qname="operNS:INTRFDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:INTRFDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:INTRFDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:INTRFDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="INEXTDSJV" qname="operNS:INEXTDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:INEXTDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:INEXTDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:INEXTDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="TINQDSJV" qname="operNS:TINQDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:TINQDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:TINQDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:TINQDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="TINQDSJV2" qname="operNS:TINQDSJV2" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:TINQDSJV2Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:TINQDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:TINQDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="IN098101" qname="operNS:IN098101" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:IN098101Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:IN098101Response" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:IN098101Bean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="NIKDSJV" qname="operNS:NIKDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:NIKDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:NIKDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:NIKDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="BNKSRDSJV" qname="operNS:BNKSRDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:BNKSRDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:BNKSRDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:BNKSRDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="CDSDSJV" qname="operNS:CDSDSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:CDSDSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:CDSDSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:CDSDSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="IIN091801" qname="operNS:IIN091801" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:IIN091801Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:IIN091801Response" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:IIN091801Bean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="INPYRLSJV2" qname="operNS:INPYRLSJV2" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:INPYRLSJV2Return" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:INPYRLSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:INPYRLSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <operation name="INPYRLSJV" qname="operNS:INPYRLSJV" xmlns:operNS="http://servicios.gateway.activo.com" returnQName="retNS:INPYRLSJVReturn" xmlns:retNS="http://servicios.gateway.activo.com" returnType="rtns:INPYRLSJVResponse" xmlns:rtns="http://beans.gateway.activo.com" soapAction="" >
+        <parameter qname="pns:req" xmlns:pns="http://servicios.gateway.activo.com" type="tns:INPYRLSJVBean" xmlns:tns="http://beans.gateway.activo.com"/>
+        <fault name="WSException" qname="fns:fault" xmlns:fns="http://servicios.gateway.activo.com" class="com.activo.gateway.servicios.WSException" type="tns:WSException" xmlns:tns="http://servicios.gateway.activo.com"/>
+      </operation>
+      <parameter name="allowedMethods" value="NIKDSJV PWDDSJV IN098002 CARDSJV STMRDSJV STMRDSJV5 BNKSRDSJV TINQDSJV2 INPYRLSJV INPYRLSJV2 LNSDSJV TINQDSJV CDSDSJV IN098101 IIN091801 INEXTDSJV IMSSGDSJV SUMDSJV REGISTER IN098201 STOPDSJV CCARDTRJV INCKBDSJV INTRFDSJV"/>
+
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMBDSJVBean"
+        type="java:com.activo.gateway.beans.STMBDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:RegisterBean"
+        type="java:com.activo.gateway.beans.RegisterBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CDSDSJVResponse"
+        type="java:com.activo.gateway.beans.CDSDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IIN091801Bean"
+        type="java:com.activo.gateway.beans.IIN091801Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:SUMDSJVResponse"
+        type="java:com.activo.gateway.beans.SUMDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:TINQDSJVResponse"
+        type="java:com.activo.gateway.beans.TINQDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_SUMDSJVBean"
+        type="java:com.activo.gateway.beans.SUMDSJVBean[]"
+        innerType="cmp-ns:SUMDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMSDSJVBean"
+        type="java:com.activo.gateway.beans.STMSDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098101Response"
+        type="java:com.activo.gateway.beans.IN098101Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:LNSDSJVBean"
+        type="java:com.activo.gateway.beans.LNSDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INCKBDSJVBean"
+        type="java:com.activo.gateway.beans.INCKBDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_INCKBDSJVBean"
+        type="java:com.activo.gateway.beans.INCKBDSJVBean[]"
+        innerType="cmp-ns:INCKBDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INEXTDSJVResponse"
+        type="java:com.activo.gateway.beans.INEXTDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INPYRLSJVResponse"
+        type="java:com.activo.gateway.beans.INPYRLSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_IIN091801Bean"
+        type="java:com.activo.gateway.beans.IIN091801Bean[]"
+        innerType="cmp-ns:IIN091801Bean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:PWDDSJVResponse"
+        type="java:com.activo.gateway.beans.PWDDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INTRFDSJVResponse"
+        type="java:com.activo.gateway.beans.INTRFDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CCARDTRJVBean"
+        type="java:com.activo.gateway.beans.CCARDTRJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:LNSDSJVResponse"
+        type="java:com.activo.gateway.beans.LNSDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098201Bean"
+        type="java:com.activo.gateway.beans.IN098201Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098002Response"
+        type="java:com.activo.gateway.beans.IN098002Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMRDSJVResponse"
+        type="java:com.activo.gateway.beans.STMRDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMRDSJV5Response"
+        type="java:com.activo.gateway.beans.STMRDSJV5Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:WSResponse"
+        type="java:com.activo.gateway.beans.WSResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_CCARDTRJVBean"
+        type="java:com.activo.gateway.beans.CCARDTRJVBean[]"
+        innerType="cmp-ns:CCARDTRJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STOPDSJVBean"
+        type="java:com.activo.gateway.beans.STOPDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098201Response"
+        type="java:com.activo.gateway.beans.IN098201Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_ILN006001Bean"
+        type="java:com.activo.gateway.beans.ILN006001Bean[]"
+        innerType="cmp-ns:ILN006001Bean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STOPDSJVResponse"
+        type="java:com.activo.gateway.beans.STOPDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098101Bean"
+        type="java:com.activo.gateway.beans.IN098101Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:TINQDSJVBean"
+        type="java:com.activo.gateway.beans.TINQDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_TINQDSJVBean"
+        type="java:com.activo.gateway.beans.TINQDSJVBean[]"
+        innerType="cmp-ns:TINQDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_INTRFDSJVBean"
+        type="java:com.activo.gateway.beans.INTRFDSJVBean[]"
+        innerType="cmp-ns:INTRFDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IIN091801Response"
+        type="java:com.activo.gateway.beans.IIN091801Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:SUMDSJVBean"
+        type="java:com.activo.gateway.beans.SUMDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:PWDDSJVBean"
+        type="java:com.activo.gateway.beans.PWDDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IN098002Bean"
+        type="java:com.activo.gateway.beans.IN098002Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CARDSJVBean"
+        type="java:com.activo.gateway.beans.CARDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INCKBDSJVResponse"
+        type="java:com.activo.gateway.beans.INCKBDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_BNKSRDSJVBean"
+        type="java:com.activo.gateway.beans.BNKSRDSJVBean[]"
+        innerType="cmp-ns:BNKSRDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INPYRLSJVBean"
+        type="java:com.activo.gateway.beans.INPYRLSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INEXTDSJVBean"
+        type="java:com.activo.gateway.beans.INEXTDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_INPYRLSJVBean"
+        type="java:com.activo.gateway.beans.INPYRLSJVBean[]"
+        innerType="cmp-ns:INPYRLSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:BNKSRDSJVBean"
+        type="java:com.activo.gateway.beans.BNKSRDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:ILN006001Bean"
+        type="java:com.activo.gateway.beans.ILN006001Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_IMSSGDSJVBean"
+        type="java:com.activo.gateway.beans.IMSSGDSJVBean[]"
+        innerType="cmp-ns:IMSSGDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:RegisterResponse"
+        type="java:com.activo.gateway.beans.RegisterResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_IN098101Bean"
+        type="java:com.activo.gateway.beans.IN098101Bean[]"
+        innerType="cmp-ns:IN098101Bean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CDSDSJVBean"
+        type="java:com.activo.gateway.beans.CDSDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_INEXTDSJVBean"
+        type="java:com.activo.gateway.beans.INEXTDSJVBean[]"
+        innerType="cmp-ns:INEXTDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:NIKDSJVResponse"
+        type="java:com.activo.gateway.beans.NIKDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_IN098201Bean"
+        type="java:com.activo.gateway.beans.IN098201Bean[]"
+        innerType="cmp-ns:IN098201Bean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:BNKSRDSJVResponse"
+        type="java:com.activo.gateway.beans.BNKSRDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:WSException"
+        type="java:com.activo.gateway.servicios.WSException"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:ELEERR"
+        type="java:com.activo.gateway.beans.ELEERR"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CARDSJVResponse"
+        type="java:com.activo.gateway.beans.CARDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:INTRFDSJVBean"
+        type="java:com.activo.gateway.beans.INTRFDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:CCARDTRJVResponse"
+        type="java:com.activo.gateway.beans.CCARDTRJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMRDSJVBean"
+        type="java:com.activo.gateway.beans.STMRDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:STMRDSJV5Bean"
+        type="java:com.activo.gateway.beans.STMRDSJV5Bean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_STOPDSJVBean"
+        type="java:com.activo.gateway.beans.STOPDSJVBean[]"
+        innerType="cmp-ns:STOPDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_IN098002Bean"
+        type="java:com.activo.gateway.beans.IN098002Bean[]"
+        innerType="cmp-ns:IN098002Bean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IMSSGDSJVBean"
+        type="java:com.activo.gateway.beans.IMSSGDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:IMSSGDSJVResponse"
+        type="java:com.activo.gateway.beans.IMSSGDSJVResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://servicios.gateway.activo.com"
+        qname="ns:ArrayOf_tns1_STMSDSJVBean"
+        type="java:com.activo.gateway.beans.STMSDSJVBean[]"
+        innerType="cmp-ns:STMSDSJVBean" xmlns:cmp-ns="http://beans.gateway.activo.com"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://beans.gateway.activo.com"
+        qname="ns:NIKDSJVBean"
+        type="java:com.activo.gateway.beans.NIKDSJVBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

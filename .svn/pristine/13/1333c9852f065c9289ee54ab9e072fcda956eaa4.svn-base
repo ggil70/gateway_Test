@@ -1,0 +1,1474 @@
+LANG=s/
+PROD_NAME_D=Banca por Internet Personal
+PROD_NAME_DC=Banca por Internet Corporativa
+
+###################################################################
+# INI MESSAGES JSP
+###################################################################
+WELCOME=bienvenido(a)
+OFFICER=Su Oficina comercial es
+CLASIFIC=Su Clasificación es
+LAST_CONNECT=Fecha Última Conexión
+
+###################################################################
+# SUMMARY
+###################################################################
+HOUR=a las
+FROM=de
+YMSG=Usted tiene los siguiente(s) mensaje(s)
+NMSG=No tiene mensajes por el momento
+NICKMSG=Alias no definido
+YOU_HAVE=Ud. tiene
+
+DATE_FORMAT_1=MM/DD/AA
+DATE_FORMAT_2=DD/MM/AA
+DATE_FORMAT_3=AA/MM/DD
+
+###################################################################
+# SEND EMAIL
+###################################################################
+EMAIL_SEND_OK=Mensaje enviado correctamente
+ERROR_EMAIL_SEND=Error: Servidor No Permite Enviar Correo Seguro en este Momento
+
+###################################################################
+# CHANGE PASSWORD
+###################################################################
+INVALID_OLD_PASSWORD=Clave Antigua incorrecta, Favor Verificar
+INVALID_CONF_PASSWORD=Clave Nueva y Confirmación no son iguales, Favor Verificar
+PASSWORD_MINIMO=Su Clave debe de tener un mínimo de
+PASSWORD_NUMERO=números de longitud
+PASSWORD_SOLO=Su Clave solo puede tener
+PASSWORD_REPETIDOS=caracteres repetidos
+PASSWORD_LETRAS=letras
+PASSWORD_CHANGED_OK=Su Clave ha sido cambiada satisfactoriamente
+PASSWORD_OPERATION=Clave de Operaciones
+PASSWORD_OPERATION_INVALID=Clave de Operaciones Invalida
+###################################################################
+# INQ LETTER OF CREDIT
+###################################################################
+FAX=Via Fax
+SIN_NOTE=Sin Notificación
+PRINT_NOTE=Imprimir Notificación
+SWIFT=Vía Swift
+TELEX=Vía Telex
+
+###################################################################
+# GENERICS SERVLETS
+###################################################################
+NO_ITEMS=Error: Ud. Necesita una Transacción para esta Acción
+NO_TEMPLATE=Error: Ud. Necesita una Transacción para esta Acción
+NO_OPERATOR=Error: Para adicionar una Transacción el usuario debe ser un operador.
+NO_SUPER=Error: Para autorizar una Transacción el usuario debe ser un supervisor o ambos.
+USER_OPEN_EQUAL_APP=Error: Usuario que Ingresa y Usuario que Aprueba no puede ser el Mismo
+USER_VERI_EQUAL_APP=Error: Usuario que Verifica y Usuario que Aprueba no puede ser el Mismo
+USER_OPEN_NEQUAL_MOD=Error: Usuario que Ingresa y Usuario que Modifica deben de ser el Mismo
+USER_OPEN_NEQUAL_DEL=Error: Usuario que Ingresa y Usuario que Borra deben de ser el Mismo
+NO_PRODUCT=Error: Ud. Necesita un Producto para esta Acción
+NO_BENE= Usted necesita primero adicionar un beneficiario
+INVALID_DATE= Fecha de Programación Invalida
+AMOUNT_OVER_LIMIT= El monto sobrepasa los límites aprobados
+ERROR_SEND_PAY_CORE=Error: Enviando el Pago al CORE
+SEND_PAY_OK=Pago Enviado Correctamente
+ERROR_SEND_BENE_CORE=Error: Enviando el Beneficiario al CORE
+BENE_ADD_OK=Beneficiario Añadido a su Lista Correctamente
+NUMBER_OF_ACC_1=Error: Para adicionar una Transacción se necesitan una o más cuentas.
+NUMBER_OF_ACC_2=Error: Para adicionar una Transacción se necesitan dos o más cuentas.
+ERROR_TRANSAC=Error: No se puede aprobar una transacción con Error
+ERROR_PAYMENT=Error: Ya tiene un pago masivo pendiente de aprobar
+ERROR_FILE_FORMAT= Formato Archivo Invalido
+ERROR_NUMBER_RECORDS=Error: Número de Registro Inválido
+ERROR_AMOUNT=Error: Monto Inválido
+ERROR_AMOUNT_DETAIL=Error: Monto Inválido. Detalle no coincide con Total
+ERROR_UPLOAD=Error: Subiendo Archivo
+CREDITACC_EQUAL_DEBITACC=Error: Cuenta de Crédito no puede ser igual a Cuenta de Débito
+REF_NUM=Numero de Referencia
+CHARGE_DATE=Fecha de Cargo
+TOTAL_AMOUNT=Monto Total
+DEBIT_ACC=Cuenta de Cargo
+PROCESS_REQUEST=Su solicitud será procesado a la brevedad
+REF_NUM_USED=Numero de Referencia ya Existe
+HIST_TRASAC=Transacciones Históricas
+CHANGE_NICK_OK=Cambio de Alias Exitoso
+INV_ACC=Cuentas Invalidas
+ERROR_FILE_HEADER_DETAIL= Detalle de archivo no coincide con Total
+###################################################################
+# SEARCH BANKS
+###################################################################
+BANK=Banco
+NO_LIST=No esta en la lista del Banco
+
+###################################################################
+# NEW USER
+###################################################################
+HEADER_MSG=ESTE MENSAJE ES GENERADO AUTOMÁTICAMENTE POR EL SISTEMA Y ES DE \r CONFIRMACIÓN SOLAMENTE. \r POR FAVOR TOME NOTA QUE EL USUARIO ADMINISTRADOR DEL SISTEMA DE BANCA POR INTERNET DE BANCOESTADO \rHA MODIFICADO LA LISTA DE USUARIOS COMO SIGUE: \r
+FOOTER_MSG=SI USTED NO MODIFICO NINGÚN USUARIO POR FAVOR INFORMELO \r INMEDIATAMENTE A BANCO ESTADO ENVIANDO UN CORREO ELECTRÓNICO \r A TRAVÉS DE LA OPCIÓN DE CONTACTENOS.\rGRACIAS POR USAR EL SISTEMA DE BANCA POR INTERNET CORPORATIVO DE DATAPRO INC.
+CHANGE_PASSWORD=Usted necesitará ingresar su nueva clave la próxima vez que accese al sistema
+PASSWORD_MIN_LEN=Su Clave debe tener un mínimo de 6 caracteres de longitud
+USER_IN_LIST=Este usuario ya existe en su lista
+USERID_EQUALS_MASTERID=El nuevo Identificador y el Identificador Maestro no pueden ser iguales
+SET_PASSWORD=Modifico Clave
+SET_STATUS=Modifico Estado
+USER_DELETE=Borrado Usuario
+USER_ADD=Nuevo Usuario
+USER_MODIFY=Modificado Usuario
+USER=Usuario
+ENTITYID=Corporación
+EXT_TRANSFER=Transferencias Externas
+INT_TRANSFER=Transferencias Internas
+THI_TRANSFER=Transferencias a Terceros
+
+###################################################################
+# OPEN CDS
+###################################################################
+MIN_AMOUNT=Monto Mínimo
+MIN_TERM=Plazo Mínimo
+PRI_INT_ACC_SAME=Cuenta de Abono Capital e Interés deben de ser la Misma
+
+###################################################################
+# USER JPS
+###################################################################
+USER_CHANGE_PASSWORD=Cambio de Clave
+USER_ADMIN=Administración de Usuarios
+USER_SET_PASSWORD=Asignar Clave a Usuarios
+USER_SET_STATUS=Cambio Estado Usuarios
+USER=Usuario
+ENTITY_ID=Código de Empresa
+USER_ID=Código de Usuario
+USER_FNAME=Nombre
+USER_LNAME=Apellido
+USER_CREATED_BY=Ingresado Por
+CREATED_DATE=Fecha (MM/DD/AA)
+USER_STATUS=Estado
+PERSONAL_INFO=Información Personal
+CUST_INFO=Identificación de Cliente
+PASSWORD_INFO=Información de Clave
+PASSWORD=Clave
+OLD_PASSWORD=Clave Original
+NEW_PASSWORD=Clave Nueva
+CONFIRM_PASSWORD=Confirmar Clave
+POSITION=Cargo
+EMAIL=E-Mail
+ROLE=Perfil
+USER_STS_0=Activo
+USER_STS_3=Deshabilitado
+USER_STS_4=Pendiente
+APRU_NUM=No. Aprobaciones 
+LIMIT=Límite
+ACCOUNTS=Cuentas
+ACCOUNT=Cuenta
+INC_EXC=Incluir / Excluir
+INC_ALL=Incluir Todas
+INCLUDE=Incluir
+EXCLUDE=Excluir
+OPERATOR=Operador
+SUPERVISOR=Supervisor
+BOTH=Ambos
+USER_LIST_BLANK=Se requiere un usuario para esta opción
+MSG_NO_USER=No hay Usuarios Definidos
+ENTITY_ID_BLANK=El Identificador de la Empresa no puede estar en blanco
+USER_ID_BLANK=El Identificador de Usuario no puede estar en blanco
+USER_STS_BLANK=Tiene que seleccionar un Estado
+USER_PASSWORD_BLANK=La Clave no puede estar en blanco
+USER_CPASSWORD_BLANK=La confirmación de la Clave no puede estar en blanco
+USER_PASSWORD_NEQ_CPASSWORD=La Clave y la confirmación no son iguales, por favor verifíquelo
+USER_PASSWORD_EQ_NPASSWORD=La Clave Nueva y la Anterior son iguales, por favor verifíquelo
+FNAME_BLANK=El Nombre del Usuario no puede estar en blanco
+LNAME_BLANK=El Apellido del Usuario no puede estar en blanco
+EMAIL_BLANK=El E-mail del Usuario no puede estar en blanco
+ADD_USER=Está seguro que desea agregar el Usuario
+DEL_USER=Está seguro que desea eliminar el Usuario
+APP_USER=Está seguro que desea aprobar el Usuario
+MOD_USER=Está seguro que desea modificar el Usuario
+ARCH_UPLOADED=Archivo cargado no puede ser modificado
+###################################################################
+# BOTTONS JSP
+###################################################################
+ADD=Agregar
+DEL=Borrar
+MOD=Modificar
+APB=Autorizar
+TMP=Plantillas
+SEL=Seleccionar
+SRC=Buscar
+PRE=Anterior
+NEX=Siguiente
+INQ=Consultar
+ACCEPT=Aceptar
+CANCEL=Cancelar
+RETURN=Volver
+PRINT=Imprimir
+DOWNLOAD=Descargar
+CONT=Continuar
+RTE=Tasas
+CALC=Calcular
+DET=Detalle
+UPL=Subir
+LOGIN=Ingresar
+CLEAN=Limpiar
+MOV=Movimientos
+EXPORT=Exportar
+CLOSE=Cerrar
+###################################################################
+# BEAN PENDING
+###################################################################
+EXT_TRANS_USA_PENDING=Transferencias Externas Pendientes de Aprobación
+EXT_TRANS_BANK_PENDING=Transferencias Externas Pendientes de Aprobación
+EXT_TRANS_OTHER_PENDING=Transferencias Externas Internacionales Pendientes de Aprobación
+INT_TRANS_PENDING=Transferencias Cuentas Propias  Pendientes de Aprobación
+THIRD_TRANS_PENDING=Transferencias Terceros  Pendientes de Aprobación
+OPEN_CD_PENDING=Apertura de Certificados de Deposito Pendientes de Aprobación
+OFFICIAL_CHK_PENDIG=Cheques Oficiales Pendientes de Aprobación
+OPEN_LCR_PENDING=Apertura de Cartas de Crédito Pendientes de Aprobación
+AMEND_LCR_PENDING=Enmienda a Carta de Crédito Pendientes de Aprobación
+PAYROLL_PENDING=Pagos Masivos Pendientes de Aprobación
+BILLPAY_PENDING=Pagos Programados Pendientes de Aprobación
+PAYROLLS_PENDING=Pagos de Nóminas Pendientes de Aprobación
+PROVIDERS_PENDING=Pagos a Proveedores Pendientes de Aprobación
+###################################################################
+# MENU TOP JSP
+###################################################################
+EXIT=salida segura »
+
+###################################################################
+# LOGS
+###################################################################
+
+###################################################################
+# LOGIN
+###################################################################
+LOGIN_USER_OK=Usuario Ingreso Correctamente
+LOGIN_USER_INV_PASSWORD=Clave Invalida
+LOGIN_USER_INACTIVE=Usuario Inactivo
+LOGIN_USER_PENDING=Usuario Pendiente Activar
+LOGIN_USER_SUSP=Usuario Suspendido
+LOGIN_USER_INV_USER=Usuario Invalido
+
+LOGIN_MASTER_OK=Usuario Maestro Ingreso Correctamente
+LOGIN_MASTER_INV_USER=Usuario Master Invalido
+LOGIN_MASTER_INV_PASSWORD=Usuario Maestro Clave Invalida
+LOGIN_MASTER_INACTIVE=Usuario Maestro Inactivo
+LOGIN_MASTER_SUSPENDED=Usuario Maestro Suspendido
+LOGIN_MASTER_PENDING=Usuario Maestro Pendiente Activar
+
+###################################################################
+# CHECKS ACTIVATION
+###################################################################
+INV_INI_CHK=Error: Cheque Inicial Inválido
+INV_END_CHK=Error: Cheque Final Inválido
+INV_RNG_CHK=Error: Rango de Cheques Inválido
+
+###################################################################
+# CCY HELP
+###################################################################
+CCY_HELP=Búsqueda de Monedas
+CCY_HISTORY=Histórico de Monedas
+CCY=Moneda
+NO_LIST=No esta en la lista del Banco
+
+###################################################################
+# INQ ACCOUNT
+###################################################################
+INQ_ACC=Consulta de Cuenta
+
+###################################################################
+# LOGOUT
+###################################################################
+LOGOUT=Salida Exitosa
+LOGOUTSTSALERT=ALERTA DE SEGURIDAD
+LOGOUTSTS1=Estimado Cliente, se ha detectado que existe una conexión activa con su usuario.<br><br>En caso de desconocer la existencia de una conexión activa lo invitamos a comunicarse
+LOGOUTSTS2=Estimado Cliente, se ha detectado que existe un nuevo intento de ingreso con su usuario.<br>Por razones de seguridad se procederá a cerrar la sesión que tiene abierta.<br><br>En caso de desconocer ese nuevo intento de ingreso lo invitamos a comunicarse
+LOGOUTSTSPHONE=inmediatamente con nuestro Centro de Atención al Cliente por el telefono<br>        0500-ACTIVAT(0500-2284828)<br>
+
+###################################################################
+# Stop Payment
+###################################################################
+INI_END_CHK=El inicio del rango no puede ser mayor que el final
+STOP_OK=Suspensión de Pago Satisfactoria
+
+###################################################################
+# Corp Info
+###################################################################
+CORP_INFO=Datos de Empresa
+NAME=Nombre
+ADDRESS=Dirección
+CITY=Ciudad
+STATE=Estado
+COUNTRY=País
+ZIP=Código Postal
+POB=Casilla Postal
+PHONE_1=Teléfono Central
+PHONE_2= Teléfono Directo
+PHONE_3= Teléfono Alterno
+FAX=Fax
+CEMAIL=Correo Electrónico
+WEB_SITE=Sitio Web
+
+WAIT=Por favor Espere
+
+H_TRANSAC=Histórico de Transacciones
+H_TRANSAC=Histórico de Transacciones
+H_TRANSAC_DESC=Seleccione la(s) opción(es) para su búsqueda
+H_TRANSAC_ALL=Todos
+H_TRANSAC_MAS=Master
+H_TRANSAC_TRA=Transacción
+H_TRANSAC_DTE=Por Fecha
+H_TRANSAC_FRM=Desde
+H_TRANSAC_TO=Hasta
+
+PLZ_M=Meses
+PLZ_D=Días
+PLZ_Y=Años
+
+###################################################################
+# Headers
+###################################################################
+H_1=Fecha
+H_2=Hora
+H_3=Usuario
+H_4=Descripción
+H_5=Cuenta de débito
+H_6=Cuenta de Crédito
+H_7=Monto
+H_8=Narrativa
+H_9=Cuentas
+H_10=Resumen
+H_11=Número
+H_12=Saldo Contable
+H_13=Saldo Disponible
+H_14=Moneda
+H_15=Nombre
+H_16=Saldo
+H_17=Inversiones
+H_18=Créditos
+H_19=Otros Productos
+H_20=Líneas de Crédito
+H_21=Monto Aprobado
+H_22=Fecha de Vencimiento
+H_23=Estado de Cuenta
+H_24=Razón Social
+H_25=Número de Cuenta
+H_26=Saldo Inicial
+H_27=Ref.
+H_28=Cargo
+H_29=Abono
+H_30=Total de Cargos
+H_31=Total de Abonos
+H_32=Búsqueda <br> Avanzada
+H_33=Reserva  Fondos/<br>Retenciones
+H_34=Resumen<br>de Saldos
+H_35=Estado de Cuentas<br>Históricos
+H_36=Exportar
+H_37=Búsqueda Avanzada
+H_38=Reserva  Fondos/Retenciones
+H_39=Resumen de Saldos
+H_40=Estado de Cuentas Históricos
+H_41=Mes Actual
+H_42=Todo
+H_43=Fechas
+H_44=Desde
+H_45=Hasta
+H_46=Cheques
+H_47=Montos
+H_48=Saldo Diferido
+H_49=Monto Retenido
+H_50=Saldo Neto
+H_51=Saldo Disponible
+H_52=Interés Sobregiro
+H_53=Reserva Fondos
+H_54=Retenciones
+H_55=Referencia
+H_56=Fecha Proceso
+H_57=Fecha de<br>Vencimiento
+H_58=No.<br>Días
+H_59=No hay registros que desplegar
+H_60=Personalizar Nombre
+H_61=Nuevo Nombre o Alias
+H_62=Interés Año Actual
+H_63=Interés al Vencimiento
+H_64=Tasa
+H_65=Interés Año Anterior
+H_66=Fecha de Apertura
+H_67=Monto Original del Prestamos
+H_68=Saldo Interés  
+H_69=Mora
+H_70=Deducciones
+H_71=Monto Total Pendiente
+H_72=Próximo Pago
+H_73=Fecha Próximo Pago
+H_74=Fecha Último Pago
+H_75=Fecha de Emisión
+H_76=Fecha de Expiración
+H_77=Tipo Carta de Crédito
+H_78=Monto Original
+H_79=Plazo
+H_80=Solicitante
+H_81=Beneficiario
+H_82=Número de Referencia
+H_83=Banco Corresponsal
+H_84=Banco Emisor
+H_85=Transferencias Internas
+H_86=Usuario<br>Ingreso
+H_87=Nº<br>Apr
+H_88=Saldo Actual
+H_89=Fecha de Cierre
+H_90=Línea de Crédito
+H_91=Limite Adelanto Efectivo
+H_92=Línea de Crédito Disponible
+H_93=Fecha Próximo Pago
+H_94=Saldo Anterior
+H_95=Compras
+H_96=Pagos
+H_97=Cargos
+H_98=Mora
+H_99=Número de Contrato
+H_100=Moneda Primaria
+H_101=Tasa de Cambio
+H_102=Fecha Contrato
+H_103=Fecha Valor
+H_104=Moneda Secundaria
+H_105=Spot Equivalente
+H_106=Su Referencia
+H_107=Tipo de Pago
+H_108=Fecha Apertura
+H_109=Tipo
+H_110=Sub-Tipo
+H_111=Estado
+H_112=Girador
+H_113=Girado
+H_114=Disponible
+H_115=Hacia
+H_116=Transferencias Terceros
+H_117=Información del Pago
+H_118=Información del Beneficiario
+H_119=Dirección
+H_120=Campos Obligatorios
+H_121=Transferencias Externas
+H_122=Venezuela
+H_123=Internacional
+H_124=Códigos ABA
+H_125=Información de Platilla
+H_126=Mantener como Plantilla
+H_127=Sí
+H_128=No
+H_129=Banco Intermediario
+H_130=Banco del Beneficiario
+H_131=SWIFT
+H_132=(opcional)
+H_133=ABA
+H_134=Buscar Nombre
+H_135=Buscar ABA
+H_136=Buscar SWIFT
+H_137=Ciudad
+H_138=Estado
+H_139=País
+H_140=Código
+H_141=Recibidas
+H_142=Internas y Terceros
+H_143=Enviadas
+H_144=Detalle de Transferencia
+H_145=Vía/Tipo
+H_146=Verbal
+H_147=Carta
+H_148=FAX
+H_149=INTERNET
+H_150=FRB
+H_151=RBS
+H_152=Referencia Principal
+H_153=Nuestra Referencia
+H_154=Emisor
+H_155=Receptor
+H_156=Parte Ordernante
+H_157=Banco Ordernante
+H_158=Banco Beneficiario
+H_159=Detalles y Cargos
+H_160=Cargos cuenta del beneficiario
+H_161=Cargos cuenta del ordernante
+H_162=Lista de Cheques Suspendidos
+H_163=Cheque<br>Inicial
+H_164=Cheque<br>Final
+H_165=Motivo
+H_166=Suspensión de Cheques
+H_167=Pérdida
+H_168=Discrepancias
+H_169=Monto Erróneo
+H_170=Incumplimiento de Contrato
+H_171=Otras Causas
+H_172=Comuníquese con nosotros
+H_173=De
+H_174=Para
+H_175=Tema
+H_176=Mensaje
+H_178=Escriba Su dirección de Correo Electrónico
+H_179=Escriba el Asunto
+H_180=Escriba el Mensaje
+H_181=Pedir Talonarios
+H_182=Cantidad de Talonarios
+H_183=La cantidad mínima es 1
+H_184=Está seguro(a) que desea solicitar
+H_185=Talonario(s), para la Cuenta número
+H_186=Cheques Oficiales
+H_187=Principal
+H_188=Interés
+H_189=Penalidades
+H_190=Cronograma de Pagos
+H_191=Capital
+H_192=Impuestos
+H_193=Total
+H_194=Pago de Crédito
+H_195=Estos son los Créditos que tiene vigentes.
+H_196=Monto Vencido
+H_197=Monto a Pagar
+H_198=Apertura de Depósito a Plazo
+H_199=Elija el producto que desea aperturar
+H_200=Características
+H_201=Abono del Capital al vencimiento
+H_202=Renovación con iguales características
+H_203=Depositar en Cuenta
+H_204=Pago de Interés
+H_205=Al vencimiento agregar al Capital
+H_206=Forma de Pago para los Intereses
+H_207=Mensual
+H_208=Al Vencimiento
+H_209=Tasas Referenciales
+H_210=Depósito Mínimo
+H_211=Días
+H_212=Calculador de Monedas
+H_213=Resultado
+H_214=Historia Tasa de Monedas
+H_215=Tasa de Compra
+H_216=Tasa de Venta
+H_217=Moneda desde y hacia no pueden ser la misma
+H_218=Saldo Total
+H_219=Saldo Principal
+H_220=Saldo Deducciones
+H_221=Imagen de Cheque
+H_222=Número de Cheque
+H_223=Discúlpenos
+H_224=Error
+H_225=Vacío
+H_226=Su Pago Mensual es
+H_227=El Interés Total es
+H_228=Corregir campos con
+H_229=Ud. Necesita
+H_230=para pagar el Préstamo
+H_231=El Préstamo No se puede Pagar
+H_232=El Préstamo es
+H_233=año
+H_234=años
+H_235=mes
+H_236=meses
+H_237=y
+H_238=Calculadoras
+H_239=Cómo será su cuota mensual?
+H_240=Cuánto tardará en terminar de pagar su préstamo?
+H_241=Qué préstamo puede asumir?
+H_242=Monto del Préstamo
+H_243=Tasa de Interés %
+H_244=Duración del Préstamo (en años)
+H_245=Su respuesta aparecerá debajo
+H_246=Cuota Mensual
+H_247=Cuota Mensual que Puede Pagar
+H_248=Tipo de Cuenta No Disponible
+H_249=Lo sentimos, usted no tiene este tipo de cuenta
+H_250=Resultado Operación
+H_251=Si desea ver sus saldos actualizados
+H_252=presione aquí
+H_253=Beneficiarios
+H_254=Forma de Pago
+H_255=Cheque
+H_256=ACH
+H_257=FED
+H_258=Crédito Cuenta
+H_259=Tipo de Cuenta
+H_260=Ahorros
+H_261=Memo ACH
+H_262=Correo Electrónico
+H_263=Pago Programado
+H_264=Monto<BR>Principio Año<BR>hasta Fecha
+H_265=Monto<BR>Primer Pago<BR>hasta Fecha
+H_266=Fecha<br>Ultimo Pago
+H_267=Monto<br>Ultimo Pago
+H_268=Fecha<br>Primer Pago
+H_269=Número de Pagos
+H_270=Fecha de Primer Pago
+H_271=Frecuencia
+H_272=Sólo uno
+H_273=Semanal
+H_274=Quincenal
+H_275=Mensual
+H_276=Trimestral
+H_277=Semestral
+H_278=Anual
+H_279=Pagos por Beneficiario
+H_280=Fecha de Pago
+H_281=Pagos Masivos
+H_282=Archivo
+H_283=Transferencias Realizadas
+H_284=día
+H_285=días
+H_286=eliminar
+H_287=aprobar
+H_288=modificar
+H_289=agregar
+H_290=[]
+H_291=Cartas de Crédito Abiertas
+H_292=N&ordm;
+H_293=Apertura de Carta de Crédito
+H_294=Su Sesión ha expirado
+H_295=Información General
+H_296=Número de Referencia del Solicitante
+H_297=Tipo de Carta de Crédito
+H_298=Irrevocable
+H_299=Irrevocable/Standby
+H_300=Irrevocable/Transferible
+H_301=Instrucciones de Confirmación
+H_302=Confirmar
+H_303=Sin Confirmar
+H_304=Información del Solicitante
+H_305=Información Financiera
+H_306=Crédito Máximo
+H_307=Máximo
+H_308=Que no exceda
+H_309=% de Tolerancia
+H_310=Montos Adicionales
+H_311=Condiciones de Crédito
+H_312=Lugar de Expiración
+H_313=Por Pago
+H_314=Por Aceptación
+H_315=Por Negociación
+H_316=Por Pago Diferido
+H_317=Por Pago Mixto
+H_318=Girado a
+H_319=Girado sobre
+H_320=Pagos Diferidos
+H_321=Pagos Mixtos
+H_322=Condiciones de Embarque
+H_323=Puerto de Embarque
+H_324=Puerto de Destino
+H_325=Información Adicional sobre Embarque
+H_326=Fecha Máxima de Embarque
+H_327=Términos de Embarque
+H_328=Embarques Parciales
+H_329=Transbordos
+H_330=Descripción de la Mercancía
+H_331=Documentos Requeridos
+H_332=Condiciones Adicionales
+H_333=Cargos en el exterior por cuenta de
+H_334=Avisar a través del Banco
+H_335=Período(s) de Presentación
+H_336=Instrucciones de Reembolso
+H_337=Ver Paridad
+H_338=Plantillas de
+H_339=Usted ha ingresado un valor inválido. Por favor, modifíquelo.
+H_340=Enmienda Cartas de Crédito
+H_341=Número de Enmienda
+H_342=Nuevo Beneficiario
+H_343=Fecha Enmienda
+H_344=Incremento/Disminución
+H_345=Períodos de Envío
+H_346=Información Emisor a Receptor
+H_347=Aumento
+H_348=Disminución
+H_349=Cheque Inicial
+H_350=Cheque Final
+H_351=Activar Chequera
+H_352=Código
+H_353=Nº<br>Registros
+H_354=Monto Total
+H_355=Archivo
+H_356=EUA
+H_357=Buscar Agencia
+H_358=Nombre Agencia
+H_359=Numero Agencia
+H_360=SOLICITUD DE AFILIACIÓN
+H_361=Datos del Cliente Titular
+H_362=Nombre o Razón Social 
+H_363=C.I./RIF No
+H_364=Teléfono(s)
+H_365=Número de Cuenta Cliente
+H_366=Tipo de Cuenta
+H_367=Datos del ( de los ) Representante(s) de la Empresa
+H_368=Nombre y Apellido
+H_369=C.I. No
+H_370=Cargo
+H_371=Formalización del Cliente
+H_372=Observaciones
+H_373=Firma del Cliente
+H_374=Firma del Funcionario
+H_375=Usuario Solicitado
+H_376=Confirmación
+H_377=PIN Afiliación
+H_378=Dirección Residencia
+H_379=Origen de Conexión
+H_380=Tipo de Conexión
+H_381=Como supo del Servicio
+H_382=Pregunta Secreta
+H_383=No. de Ofc.
+H_384=IDENTIFICACIÓN DE LA(S) CUENTAS(S)
+H_385=Información Pre-afiliación
+H_386=No. de Solicitud
+H_387=Firma del Cliente
+H_388=Firma del Funcionario
+H_389=Imprima, Firme y Presente esta confirmación en una de nuestras agencias.
+H_390=Valor debe de ser ingresado
+H_391=Valor numérico debe ser ingresado
+H_392=Clave de Ingreso y Confirmación deben ser iguales
+H_393=Oferta pública del servicio
+H_394=Su Solicitud fue aceptada<br>Muy pronto recibirá la confirmación de activación de su usuario.
+H_395=Saldo Capital
+H_396=Cuenta del Beneficiario
+H_397=No. de Cedula del Beneficiario 
+H_398=Concepto
+H_399=Tipo Operación
+H_400=Venezolano
+H_401=Extranjero
+H_401B=Pasaporte
+H_402=Jurídico
+H_403=Gobierno
+H_404=Mismo Titular Otros Bancos
+H_405=Terceros Otros Bancos
+H_406=Tarjeta de Crédito Otro Banco
+H_407=Otras Transacciones Externas // Disponible
+H_408=Otras transacciones // Disponible
+H_409=Otras Transacciones // Disponible 
+H_410=
+H_411=Número de Tarjeta
+H_412=Registros Rechazados 
+H_413=Registros Procesados
+H_414=Pago Tarjeta de Crédito
+H_415=Tarjeta No.
+H_416=Cargo a Cuenta 
+H_417=Lista Proveedores
+H_418=Monto a Invertir
+H_419=Producto
+H_420=No Existen Productos Disponibles en esta Moneda
+H_421=No Registrado en Sistema
+H_422=Limite de Crédito
+H_423=Pago Mínimo
+H_424=Subir Beneficiarios
+H_425=Valor Pagado
+H_426=Detalle de Pagos
+H_427=Subir Pagos de Proveedores
+H_428=Nuevo Proveedor
+H_429=Cuotas Pagadas
+H_430=Cuotas Vencidas
+H_431=Transferencias
+H_432=Recibo de Pagos
+H_433=Total Rechazado
+H_434=Activar Servicio SMS para Cuentas
+H_435=Selecciona la cuenta a configurar servicio de SMS
+H_436=Servicio SMS
+H_437=Seleccione los tipos de Operaciones en los que desea activar mensajes SMS para esta cuenta
+H_438=Identificación
+H_439=Teléfono Celular
+H_440=Tarjetas de Crédito
+H_441=Cuenta
+H_442=Subir Pagos de Nómina
+H_443=Subir Beneficiarios de Nómina
+H_444=Subir Beneficiarios Proveedores
+H_445=Beneficiario de Nómina
+H_446=Afiliación de Proveedores
+H_447=Nombre del Beneficiario
+H_448=Identificación del Beneficiario
+H_449=Alias
+
+
+H_500=Renovar Principal mas Intereses Acumulados
+H_501=Renovar Principal y acreditar Interés al vencimiento
+H_501B=Renovar Principal y acreditar Interés mensualmente 
+H_502=No Renovar - Acreditar Interés y Principal en Cuenta de Crédito
+H_503=Instrucciones al Vencimiento
+H_504=Verificación y Aceptación
+H_505=Seleccione el formato deseado
+H_506=Texto
+H_507=Excel
+H_508=Quiquen
+H_509=XML
+H_510=ISO8081
+H_511=Configuraciones Adicionales
+H_512=Formato de Fechas
+H_513=Incluir No. de Cuenta
+H_514=División de Campos
+H_515=Delimitado
+H_516=Longitud Fija
+H_517=DD/MM/AA
+H_518=DD/MM/AAAA
+H_519=Descarga de Archivo Completada
+H_520=Su descarga de transacciones ha sido completada. Seleccione Aceptar para regresar y solicitar otra descarga o seleccione otra opción del menú
+H_521=Incluir encabezado de campos
+H_522=No. Registro
+H_523=Total Detalle no cuadra con Total Pago
+H_524=No. de Lote
+H_525=No. de Lote ya existe
+H_526=Separador de decimales
+H_527=Punto
+H_528=Coma
+H_529=Ninguno
+H_530=Longitud del lote excede los 9 caracteres
+H_531=Consulta Tarjeta de Crédito
+H_532=Seleccione la Tarjeta que desea consultar
+H_533=Documento de Identidad
+H_534=Mov. Por Facturar
+H_535=Movimientos por facturar  
+H_536=Pagos Pendientes de Aplicar
+H_537=E-mail del Beneficiario
+H_538=Aplicado
+H_539=Enviado
+H_540=Rechazado
+H_541=Pendiente
+H_542=En Proceso
+H_543=Nómina
+H_544=Proveedor
+H_545=Cuenta Banco Activo
+H_546=Cuenta Otro Banco
+H_547=Tipo Gestión
+H_548=Procesado
+H_549=Estatus
+H_550=Seleccione una fecha de Corte
+H_551=Int. Cargos del Mes
+H_552=Int. Financiamiento
+H_553=Int. Moratorio
+H_554=Comisiones
+H_555=Coutas otros Créditos
+H_556=Capital Rotativo
+H_557=Tiempo
+H_558=Autorizado
+H_559=Utilizado
+H_560=Disponible
+H_561=Saldo anterior tarjeta de crédito
+H_562=Saldo anterior otros créditos
+H_563=Cuotas de otros créditos cargadas al mes
+H_564=Saldo actual otros créditos
+H_565=Detalle de pagos y abonos
+H_566=Saldo total adeudado tarjeta de crédito
+H_567=Intereses por financiamiento
+H_568=Intereses moratorios
+H_669=Pago Mínimo
+H_570=Pagos mínimos no cancelados a la fecha (pagos vencidos)
+H_571=Cupo CAVIDI viajero
+H_572=Cupo CAVIDI efectivo
+H_573=Cupo CAVIDI Internet
+H_574=Autorizaciones Pendientes
+H_575=Cuota
+H_576=Estado de Cuenta Tarjeta de Crédito
+H_577=RECIBO
+H_578=NOTA DE DÉBITO
+H_579=NOTA DE CRÉDITO
+H_580=ORIGEN
+H_581=DETALLE DE PAGO
+H_582=No. de Pagos
+H_583=Tipo Documento
+H_584=Número o Referencia
+H_585=Email Principal
+H_586=Email Secundario
+H_587=Clave de Ingreso
+H_588=Confirmación de Clave
+H_589=Verificar Usuario
+H_590=Clave de Ingreso y Confirmación no son iguales, Favor Verificar
+H_591=Clave Transaccional
+H_592=Confirmación Clave Transaccional
+H_593=Clave Transaccional y Confirmación no son iguales, Favor Verifique
+H_594=Clave de Ingreso y Transaccional debe de ser distinta
+H_595=PIN Actual
+H_596=Nuevo PIN
+H_597=Confirmación de PIN
+H_598=Cambio de PIN Tarjeta de Débito
+H_599=Estimado Cliente, Su PIN de Tarjeta de Débito ha sido cambiado con exito.
+#========================
+#   Autoregistro
+H_600A=Si Ud. ya está registrado a este servicio <br>ingrese su Usuario y presione Aceptar
+H_600=Si Ud. está ingresando por primera vez,<br> o no posee Usuario y Clave
+H_600B=¿Olvidó su Usuario, Clave o Sello personal?
+H_601=Regístrese
+H_602=Haga Click Aquí
+H_603=Aceptación del Contrato
+H_604=Autenticación del Cliente
+H_605=Registro de Usuario
+H_606=Configuración de Parámetros
+H_607=No. de Cédula
+H_608=Últimos 6 dígitos de su Tarjeta
+H_609=Clave de Cajero
+H_610=Fecha de Vencimiento
+H_611=CVV2
+H_612=Estimado Cliente, Ud. ha creado el usuario y clave de forma exitosa.
+H_613=Estimado Cliente, Ud. debe de seleccionar una de las imagenes
+H_614=A continuación cree su propio sello haciendo click <a href="../pages/autoregistro_antifishing_sello.jsp">aquí</a> , o seleccione alguna de las imagenes que se muestra a continuación.
+H_615=A continuación cree un sello personalizado con las siguientes opciones :
+H_616=Crear un sello de Texto
+H_617=Cargar una imagen ...
+H_618=Puede tener los formatos JPGE, JPG o GIF y su tamano debe de ser inferior a 40K.
+H_619=21 caracteres como máximo
+H_620=Debe de Seleccionar un tipo de sello
+H_621=Debe de ingresar texto para su sello
+H_622=Su imagen personal no puede exceder de 40K
+H_623=El siguiente es su sello personalizado que se presentará al momento de iniciar sesión en el servicio de Activo en Línea.
+H_624=Seguidamente Usted debe crear tres(3) preguntas y respuestas que serán requeridas al momento de Olvidar la clave de ingreso Activo en Línea.
+H_625=Pregunta de desafío
+H_626=Respuesta  a la pregunta de desafío.
+H_627=Estimado Cliente, Preguntas de desafío deben de ser distintas
+H_627B=Estimado Cliente, por favor ingrese su pregunta de desafío (longitud mínima 5 caracteres)
+H_628=Estimado Cliente, Respuestas a preguntas de desafío no pueden ser iguales
+H_628B=Estimado Cliente, por favor ingrese su respuesta a la pregunta de desafío (longitud mínima 5 caracteres)
+H_629=Estimado Cliente, sus preguntas y respuestas de desafío se han registrado satisfactoriamente.
+H_630=A continuación Ud. debe establecer los límites de Montos por Transacción y Acumulado Diario para Pagos y Transferencias
+H_631=Límites Máximos Permitidos<br>por Banco Activo
+H_632=Límites Recomendados<br>por Banco Activo
+H_633=Límites Establecidos<br>por el Cliente
+H_634=Tipo de Transferencia
+H_635=Internas(mismo Titular en Banco Activo)
+H_636=Internas a Terceros(Banco Activo)
+H_637=Externas (mismo titular otros Bancos)
+H_637B=Externas a Terceros(Otros Bancos)
+H_638=Transacción
+H_639=Acumulado
+H_640=Sin Límite
+H_641=Estimado Cliente, su registro a Activo en línea Persona ha sido satisfactorio. A partir de este momento puede acceder a la banca en línea a través de la opción Usuarios Registrados.
+H_642=¿Olvidó su Clave?<br> Haga Click
+H_643=A continuación se muestra una lista de preguntas que Ud. debe responder de manera correcta, lo que le permitirá recuperar su clave.
+H_644=Estimado Cliente, recuerde es importante responder las preguntas de la misma manera como escribió cuando configuró esta opción. Si falla nuevamente su usuario será bloqueado. 
+H_645=Estimado Cliente, su nueva clave se ha registrado satisfactoriamente. A partir de este momento, usted puede acceder a la Banca en Línea a través de la opción Usuarios Registrados.
+H_646=¿Es este su sello de ingreso?
+H_647=Estimado Cliente, en caso de no reconocer la imagen desplegada evite ingresar la Clave y por favor comuníquese al Centro de Atención Telefónica a través del 0500-ACTIVAT (2284828)
+H_648=Ud. no posee un sello de ingreso definido.<br>Por su seguridad le recomendamos crear uno al ingresar
+H_649=A continuación cree su propio sello haciendo click <a href="../pages/body_antifishing_sello.jsp">aquí</a> , o seleccione alguna de las imágenes que se muestra a continuación.
+H_650=Estimado Cliente, su sello personalizado ha sido creado satisfactoriamente
+H_651=Tiempo caducidad de la clave
+H_652=Verificar Usuario
+H_653=Estimado Cliente, este usuario ya existe en el Servicio de Activo en Línea. Por favor seleccione otro usuario
+H_654=Estimado Cliente, el Usuario se encuentra disponible
+H_655=El próximo paso es crear el usuario que utilizará para el ingreso al servicio de Internet Banking
+H_656=Estimado Cliente, El usuario no ha sido verificado
+H_657=Estimado Cliente, El usuario debe de estar compuesto por caracteres alfanuméricos, mínimo 8 máximo 10 
+H_658=La clave debe ser alfanumérica, mínimo 8 y máximo 10 caracteres.<br>Las letras mayúsculas y los caracteres especiales son opcionales.<br>La clave sólo se puede ingresar con el teclado virtual.
+H_659=su clave debe de poseer una letra mayúscula
+H_660=su clave debe de poseer una letra minúscula
+H_660B=su clave debe de poseer una letra
+H_661=su clave debe de poseer un carácter especial
+H_661B=su clave debe de poseer un número
+H_662=el número de teléfono celular es invalido
+H_663=Otra
+H_664=Estimado Cliente, Ud. ha definido uno de los límites con monto 0.00. Como consecuencia de ello, el sistema procederá a bloquear la funcionalidad de Transferencia cuyo límite se encuentra en 0.00. Esta seguro de querer bloquear esa funcionalidad?
+H_665=Tarjeta de Débito 
+H_666=Tarjeta
+H_667=Seleccione la opción que desea recuperar
+H_668=Olvidó su
+H_669=Clave
+H_670=Sello
+H_671=Usuario
+H_672=VISA
+H_673=MASTER
+H_674=Estimado Cliente, La imagen seleccionada no coincide
+H_675=Usuarios Registrados
+H_676=Usuarios Nuevos
+###################################################################
+# Preguntas de Desafio
+###################################################################
+QUESTION_NUM = 12
+             123456789|123456789|123456789|123456789|123456789|12345
+QUESTION_0 = Un lugar secreto
+QUESTION_1 = Indique el nombre de su película favorita
+QUESTION_2 = Indique el nombre de su libro favorito
+QUESTION_3 = Nombre del colegio en donde estudio primaria
+QUESTION_4 = Indique el nombre de su primera mascota
+QUESTION_5 = Indique el nombre de su héroe
+QUESTION_6 = Indique la marca de su primer vehículo
+QUESTION_7 = Indique cual es su hobby favorito
+QUESTION_8 = Indique cual es su canción favorita
+QUESTION_9 = Indique su comiquita favorita
+QUESTION_10 = Indique cual es su deporte favorito
+QUESTION_11 = Indique cual es su postre favorito
+###################################################################
+# Preguntas de Validacion
+###################################################################
+VALQUESTION_0 = La siguiente fecha : @VALUE@  ¿es su fecha de nacimiento?
+VALQUESTION_1 = La siguiente dirección: @VALUE@  ¿es la que usted tiene registrada en Banco Activo?
+VALQUESTION_2 = La siguiente dirección: @VALUE@  ¿es donde usted recibe los estados de cuenta de la Tarjeta de Crédito?
+VALQUESTION_3 = ¿En su cuenta de ahorro firma un cotitular?
+VALQUESTION_4 = ¿En su cuenta de corriente firma un cotitular?
+VALQUESTION_5 = ¿Ud. posee una cuenta de ahorros en Banco Activo? 
+VALQUESTION_6 = ¿Ud. posee una cuenta de corriente en Banco Activo? 
+VALQUESTION_7 = ¿Ud. posee una Tarjeta de Crédito VISA de Banco Activo?
+VALQUESTION_8 = ¿Ud. posee una Tarjeta de Crédito MasterCard de Banco Activo?
+VALQUESTION_9 = ¿Indique cual es el Código de Seguridad de su tarjeta de débito, que se encuentra ubicado en el reverso de la tarjeta, en la parte superior derecha de la banda magnética?
+
+ADICDATA5_1 = Ingrese los últimos cuatro dígitos del número de cuenta
+ADICDATA5_2 = Ingrese número de libreta de ahorro
+ADICDATA6_1 = Ingrese los últimos cuatro dígitos del número de cuenta
+ADICDATA6_2 = Ingrese el número de un número de cheque de su última chequera activa
+ADICDATA7_1 = Ingrese los últimos cuatro dígitos de la tarjeta
+ADICDATA7_2 = Ingrese el Código de Seguridad de su tarjeta, son los últimos 3 dígitos que se encuentran ubicados en el reverso de la tarjeta, en la parte superior derecha de la banda magnética
+ADICDATA7_3	= Ingrese los cuatro (4) dígitos de la fecha de vencimiento de la tarjeta, ubicado en el anverso de la tarjeta
+ADICDATA8_1 = Ingrese los últimos cuatro dígitos de la tarjeta
+ADICDATA8_2 = Ingrese el Código de Seguridad de su tarjeta, son los últimos 3 dígitos que se encuentran ubicados en el reverso de la tarjeta, en la parte superior derecha de la banda magnética
+ADICDATA8_3	= Ingrese los cuatro (4) dígitos de la fecha de vencimiento de la tarjeta, ubicado en el anverso de la tarjeta
+
+VALERRMSG = Estimado Cliente, por razones de seguridad debe comunicarse con nuestro Centro de Atención Activo al 0500-ACTIVAT (2284828)
+
+PRV_DOC_FA=Factura
+PRV_DOC_GI=Giro
+PRV_DOC_CU=Cuota
+PRV_DOC_ND=Nota de Débito
+PRV_DOC_NC=Nota de Crédito
+PRV_DOC_OT=Otro
+###################################################################
+# Pages Messages
+###################################################################
+DESC_0=Estos son los Usuarios que su Empresa o Institución tiene definidos.<br>Si desea incorporar uno nuevo, debe seguir los siguientes pasos:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Presione “Agregar”, para ingresar las características del Usuario<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Luego ingrese en la opción “Asignar Clave”
+DESC_1=<b>Nota:</b> <b>"Operador"</b> es quien construye la instrucción y <b>"Supervisor"</b> quien autoriza el movimiento de fondos.
+DESC_2=Defina las opciones que podrá visualizar este Usuario
+DESC_3=Recuerde que debe asignar la Clave de este Usuario en “Asignar Clave”.
+DESC_4=Seleccione al Usuario que desea ingresarle Clave y presione “Aceptar”.
+DESC_5=Seleccione al Usuario que desea cambiarle el estado y presione “Aceptar”.
+DESC_6=Recuerde informarle al Usuario su Clave de ingreso al Sitio.
+DESC_7=Modifique el Estado del Usuario y presione “Aceptar”.
+DESC_8=Modifique su Clave personal y presione “Aceptar”.
+DESC_9=Esta información es entregada para efectos de referencia solamente y se encuentra sujeta a confirmación. No es un sustituto de su estado de cuenta periódico ni de otra información o confirmación que deba ser entregada por el Banco, como los Términos y Condiciones de el Banco. 
+DESC_10=Seleccione la o las opciones para su Búsqueda
+DESC_11=Seleccione el Estado de Cuenta Histórica que desee consultar.
+DESC_12=Defina el alias que desee para identificar su Cuenta o Producto.
+DESC_13=Estas son las operaciones pendientes de aprobar.<br>Para añadir una nueva, presione "Agregar".
+DESC_14=Los códigos ABA son de 9 caracteres, rellenar con ceros a la izquierda para completar.
+DESC_15=Cada transferencia a otros bancos tiene un costo de Bs.F 1,6<BR>Para consultar mas detalles sobre las condiciones de  transferencias, haz clic en el menú principal sobre la opción “Transferencias” y luego “Condiciones Generales”
+DESC_16=<b>Nota:</b> Las leyes de los Estados Unidos y las regulaciones de la oficina de Control de Activos en el Exterior (&quot;OFAC&quot;), restringen las Transferencias de Fondos a ciertos países, organizaciones e individuos. El intento de transferencias a estos receptores puede conllevar a un embargo, a menos que dicha transferencia haya sido autorizada bajo una licencia de OFAC.<BR>Los países sancionados incluyen los Balcanes, Burma, Corea del Norte, Cuba, Liberia, Libia, Irak, Irán, Siria, Sudán,  Zimbawe y otros que se incorporen en el futuro. Para más información, sobre sanciones específicas por parte de los EUA y para ver la lista de individuos y entidades sancionados, por favor, consulte en el sitio web de OFAC www.ustreas.gov. 
+DESC_17=Por favor comuníquese con el usuario Administrador, en su empresa.
+DESC_18=Por favor, presione el botón &quot;Continuar&quot;y vuelva a intentarlo.
+DESC_19=Clave Cambiada Exitosamente
+DESC_20=Por favor comuníquese con nuestra área de Atención al Cliente.
+DESC_21=Si desea reordenar la información, presione el título de la columna. Si desea ver el detalle, presione la Referencia.
+DESC_22=Para detener el pago de un Cheque, coloque el número en "Cheque Inicial". En caso que requiera detener el pago de más de un Cheque (una serie), ingrese el primer número en "Cheque Inicial" y el último número en "Cheque Final".
+DESC_23=El Banco no garantiza que los cheques emitidos sean detenidos debido a que los mismos ya pueden haber sido presentados por taquilla. 
+DESC_24=Para pedir Talonario de cheques, elija la Cuenta y la cantidad de Talonarios requeridos.
+DESC_25=El Talonario que está solicitando será de 100 cheques. 
+DESC_26=Los Cheques Oficiales sólo se emitirán a direcciones dentro Venezuela.
+DESC_27=Nota: El monto m&iacute;nimo es <b>VEB 10,000</b> y plazo m&iacute;nimo son 7 días. 
+DESC_28=Si usted requiere otra alternativa consulte la Mesa de Dinero directamente.
+DESC_29=Estas son las Inversiones que tiene pendientes de aprobación.<br>Los Depósitos a Plazo vigentes puede visualizarlos en "Cuentas – Resumen". 
+DESC_30=No se encontró la imagen del cheque número
+DESC_31=El Sistema no está disponible en estos momentos.<br>Por favor vuelva a intentar más tarde.
+DESC_32=Tres Factores afectan la cuota mensual de un préstamo: el monto solicitado, la duración del préstamo y la tasa de interés. Un modo de reducir la cuota mensual que usted debe abonar es alargar la duración del préstamo, pero debe tener en cuenta que cuanto mayor sea la duraci&oacute;n del préstamo, mayor será el monto que pague en intereses. Utilice la calculadora inferior para calcular la cuota mensual que mejor se ajuste a sus necesidades.
+DESC_33=Generalmente, solicite prestamos a corto plazo, especialmente para objetos que se devalúen con el paso del tiempo, no se preocupe de la duración del préstamo para objetos que incrementen su valor con el tiempo, como por ejemplo un terreno, la apreciación del objeto le puede ayudar a usted a pagar los intereses a lo largo de la duración del préstamo. La calculadora inferior le ayudará a saber cuanto tiempo tardará usted en terminar de pagar su préstamo.
+DESC_34=Mientras usted pueda permitirse un préstamo tan grande como usted piense, tenga cuidado de no contraer mas débitos de los que pueda asumir cómodamente. Expertos financieros recomiendan no gastar más del 15% de sus ingresos disponibles en el pago de débitos, sin incluir su hipoteca. Cuando haya pensado la cantidad de dinero que usted desea solicitar, tenga en cuenta lo dicho anteriormente para evitar problemas. Use la calculadora que aparece debajo para calcular el préstamo que usted puede asumir.
+DESC_35=Estos son los Beneficiarios a los que puede programar un pago
+DESC_36=Los Pagos Programados sólo se realizarán a Beneficiarios dentro del Territorio Venezolano
+DESC_37=Estos son los Pagos Programados que usted tiene ingresados
+DESC_38=Estos son los Pagos Programados que usted tiene ingresados pendientes de aprobar.<br>Para programar un pago para un beneficiario, presione "Agregar". 
+DESC_39=Si desea cambiar el beneficiario, pinche el checklist
+DESC_40=¿Está seguro(a) que desea cambiar su clave ?
+DESC_41=Haga clic sobre el símbolo
+DESC_42=para posicionarse en el área e ingresar el dato solicitado a través del Teclado Virtual
+DESC_43=Estas son las Cartas de Crédito Abiertas..<br>Para añadir una Enmienda, presione "Agregar".
+DESC_44=Gracias por utilizar CAM Directo Miami
+DESC_45=Por su seguridad, le agradeceremos que ingrese nuevamente su Clave, ya que transcurrieron 3 minutos sin actividad en el sitio.<br>Para ello presione el botón &quot;Continuar&quot;
+DESC_46=Para solicitar la activación de cheques, seleccione el número de Cuenta e introduzca el número del cheque inicial y final que usted desea activar.
+DESC_47=Por su seguridad, la Clave de Ingreso solo puede ser ingresada mediante Teclado Virtual
+DESC_48=Defina el Depósito a Plazo Fijo
+DESC_49=
+DESC_50=Seleccione el Estado de Cuenta de Tarjeta de Crédito que desee consultar
+DESC_51=Estimado Cliente, este número de Cédula de Identidad no se encuentra registrado en nuestra base de datos. Por favor verifique e intente de nuevo. Si el mensaje persiste, diríjase a una de nuestras Oficinas comerciales para regularizar la situación.
+DESC_52=Estimado cliente, el archivo seleccionado no corresponde a un formato de imagen valida. Por favor verifique
+DESC_53=NOTA:<br> Uds. puede definir un monto distinto a los límites recomendados o máximo permitido. En cuyo caso el monto que coloque podrá estar por debajo del límite recomendado y en ningún caso por encima de los límites permitidos por Banco Activo.
+DESC_54=Estimado Cliente, ingrese los valores requeridos para modificar su PIN de tarjeta de débito
+DESC_55=Estimado Cliente, por su seguridad ingrese los datos de su tarjeta de débito antes de continuar con la opción solicitada
+DESC_56=Estimado Cliente, en este momento es importante que tenga a mano todos sus instrumentos financieros de Banco Activo para poder completar el registro al servicio de Activo en Línea 
+DESC_57=Ingrese la clave utilizando el teclado virtual<br> y luego presione aceptar
+DESC_58=Estimado Cliente favor confirme la imagen seleccionada
+DESC_59=Estimado Cliente, el número de tarjeta o la clave es invalida.<br> Por favor verifique e intente de nuevo. Recuerde que al tercer intento fallido la tarjeta y el proceso de registro será bloqueado
+DESC_60=Estimado Cliente, su tarjeta de débito ha sido bloqueada por medidas de seguridad. Por favor diríjase a una Oficina Comercial.
+DESC_61=Estimado Cliente, su registro se encuentra bloqueado por medidas de seguridad. Por favor diríjase a una Oficina Comercial.
+DESC_62=Estimado Cliente, la identificación de su Usuario fue enviado a su correo electrónico 
+DESC_63=Estimado Cliente, usted ya se encuentra registrado en el servicio de Activo en Línea. Por favor ingrese a través de la opción Usuarios Registrados
+DESC_64=IMPORTANTE :<BR>Si usted se adhiere a cualquiera de los límites de montos establecidos por Banco Activo(recomendado o máximo), y los límites sufren algún tipo de modificación(hacia arriba o abajo), el sistema ajustará los montos establecidos por usted en funcion a dicho movimiento.<br>Aquellos valores distintos a esos límites se mantendrán siempre y cuando el monto se encuentre por debajo del límite máximo permitido.
+DESC_65=Estimado Cliente, para registrarse en el servicio Activo en Línea usted requiere tener al menos una cuenta financiera.
+DESC_66=Estimado Cliente, a continuación Ud. podrá configurar su nueva clave para ingresar al servicio de Activo en Línea
+
+
+DESC_87=Resultado de la gestión
+DESC_88=Estas son las gestiones pendientes de procesar
+DESC_89=Estas son las gestiones procesadas
+DESC_90=
+###################################################################
+# Confirmation Messages
+###################################################################
+MSG_01=Carga Beneficiarios.<BR>Estimado Cliente, el archivo ha sido cargado satisfactoriamente.
+MSG_02=Carga Beneficiarios.<BR>Estimado Cliente, el archivo de beneficiarios no ha sido cargado por presentar errores de forma o datos inválidos.<br> Presione el botón Continuar para ver la lista de los errores detectados.
+MSG_02P=Carga Beneficiarios.<BR>Estimado Cliente, el archivo de beneficiarios ha sido cargado parcialmente por presentar errores en los datos.<br> Presione el botón Continuar para ver la lista de los beneficiarios procesados y con error. <br>@NORCRJ@ de @NORCTOT@ registros presentan error.
+MSG_03=Pago de Nómina.<BR>Estimado Cliente, Su pago de nómina con cargo a su cuenta @ACC@ por valor de @AMT@ ha sido recibida y será procesada el @DATE@.
+MSG_04=Carga de Nómina<BR>Estimado Cliente, el archivo de pagos presenta errores y no es posible cargarlo al sistema.<BR>Presione el botón Continuar para ver la lista de errores detectados.<br>
+MSG_05=Carga de Nómina<BR>Estimado Cliente, Su archivo de pagos ha sido cargado satisfactoriamente.<br><br>Registros Cargados : @REC@ <br> Total Archivo : @AMT@ <br><br>
+
+MSG_06=Pago A Proveedores.<BR>Estimado Cliente, Su pago a Proveedores con cargo a su cuenta @ACC@ por valor de @AMT@ ha sido recibida y será procesada el @DATE@.
+MSG_07=Carga de Proveedores<BR>Estimado Cliente, el archivo de pagos presenta errores y no es posible cargarlo al sistema.<BR>Presione el botón Continuar para ver la lista de errores detectados.<br>
+MSG_08=Carga de Proveedores<BR>Estimado Cliente, Su archivo de pagos ha sido cargado satisfactoriamente.<br><br>Registros Cargados : @REC@ <br> Total Archivo : @AMT@ <br><br>
+###################################################################
+# Textos Emails
+###################################################################
+EML_SUB=Banco Activo en Línea
+EML_01=Estimado(a) Cliente: @BNME@ <br><BR>BANCO ACTIVO se complace en informarle que de acuerdo a instrucciones de la Empresa: @ONME@, se le ha enviado a acreditar en su Cuenta Bancaria No.: @TAC@, una Transferencia por concepto de: @DESC@.
+EML_02SUB=Notificación de Pago
+EML_02A=Estimado(a) Cliente: @BNME@ <br><BR>BANCO ACTIVO se complace en informarle que de acuerdo a instrucciones de la Empresa: @ONME@, se le ha enviado a acreditar en su Cuenta Bancaria No.: @TAC@, una Transferencia por concepto de: @DESC@.
+EML_02B=<br>Correspondiente a los documentos que se especifican a continuación:<br>
+EML_02C=<table border=0><tr><td><b>Tipo Documento</b></td><td><b>Número o Referencia</b></td><td><b>Monto</b></TD></TR>
+EML_03P=Estimado(a) Cliente: @ONME@ <br><br>BANCO ACTIVO se complace en informarle que de acuerdo a sus instrucciones, se ha debitado en su Cuenta Bancaria No.: @FAC@, las cantidades de dinero correspondiente al Lote de Pagos a Proveedores identificado con las siglas: @BTH@.
+EML_03N=Estimado(a) Cliente: @ONME@ <br><br>BANCO ACTIVO se complace en informarle que de acuerdo a sus instrucciones, se ha debitado en su Cuenta Bancaria No.: @FAC@, las cantidades de dinero correspondiente al Lote de Pagos Nómina identificado con las siglas: @BTH@.
+EML_USRREC = Estimado(a) Cliente: BANCO ACTIVO se complace en informarle su usuario : @USER@.
+
+
+
+EML_FOOT1=<br>En caso de desconocer esta transacción o requerir información adicional puede comunicarse con nuestro Centro de Atención al Cliente por el teléfono 0500-ACTIVAT (0500-2284828)
+EML_FOOT2=<BR>Atentamente,<br><br>
+ 
+###################################################################
+# Account Types
+###################################################################
+DDA=Cuenta Corrientes
+SAV=Cuenta de Ahorro
+MMK=Money Market
+NOW=Cuenta Now
+CAL=Cuenta Cal
+LNS=Prestamos
+VAL=Valores
+DES=Descuentos
+CDS=Deposito a Plazo
+TDS=Deposito a Plazo
+PLS=Inversiones
+PLP=Inversiones
+ACP=Aceptación
+ACS=Aceptación
+LCR=Carta de Crédito
+ACC=Aceptación
+CLT=Cobranza
+CC&=Tarjeta de Crédito
+FWS=Contrato Futuro
+FWP=Contrato Futuro
+SPS=Swaps
+SPP=Swaps
+FEP=Moneda Extranjera
+
+###################################################################
+# TAGLIB do not change the data {X}
+###################################################################
+TAG_LIB_EXPORT_FILE_NAME=Listado
+EXPORT.BANNER=Exportar: {0}
+BASIC.MSG.EMPTY_LIST=No hay registros que mostrar.
+PAGING.BANNER.ITEM_NAME=Registro
+PAGING.BANNER.ITEMS_NAME=Registros
+PAGING.BANNER.NO_ITEMS_FOUND=No hay registros.
+PAGING.BANNER.PREV_LABEL=Anterior
+PAGING.BANNER.NEXT_LABEL=Siguiente
+PAGING.BANNER.FIRST_LABEL=Primero
+PAGING.BANNER.LAST_LABEL=Ultimo
+PAGING.BANNER.SOME_ITEMS_FOUND={0} {1} Encontrados, Mostrando {2} al {3}
+PAGING.BANNER.ALL_ITEMS_FOUND={0} {1} Encontrados, Mostrando {2}
+PAGING.BANNER.ONE_ITEM_FOUND=Encontrado, Mostrando
+BASIC.MSG.EMPTY_LIST=No hay registros que mostrar.
+
+TRA_0=Por favor ingrese Número de Cuenta
+TRA_1=Por favor ingrese un Monto válido
+TRA_2=Por favor ingrese Moneda
+TRA_3=Por favor ingrese Número de Cuenta del Beneficiario
+TRA_4=Por favor ingrese Nombre del Beneficiario
+TRA_5=Por favor ingrese Dirección del Beneficiario
+TRA_6=Por favor ingrese Banco del Beneficiario
+TRA_7=Está seguro que desea transferir
+TRA_8=desde la Cuenta
+TRA_9=a favor de
+TRA_10=Está seguro que desea eliminar la transacción
+TRA_11=Está seguro que desea autorizar la transacción
+TRA_12=Está seguro que desea actualizar la transacción
+TRA_13=?
+TRA_14=Por favor, seleccione en 'Desde' la Cuenta donde cargará sus fondos.
+TRA_15=Por favor, seleccione en 'Hacia' la Cuenta donde abonará sus fondos
+TRA_16=Transferencia ya fue procesada
+TRA_17=a la Cuenta
+TRA_18=Está seguro(a) que desea cambiar el alias para la Cuenta
+TRA_19=Por favor, ingrese la Descripción
+TRA_20=¿Está seguro que desea solicitar este Cheque Oficial?
+TRA_21=¿Está seguro que desea eliminar este Cheque Oficial?
+TRA_22=¿Está seguro que desea autorizar este Cheque Oficial?
+TRA_23=¿Está seguro que desea modificar este Cheque Oficial?
+TRA_24=Por favor, ingrese el plazo
+TRA_25=Está seguro que desea abrir un Depósito a Plazo por un monto de
+TRA_26=y en un Plazo de
+TRA_27=Está seguro que desea
+TRA_28=el Depósito a Plazo de un monto
+TRA_29=y Número de Referencia
+TRA_30=Por favor ingrese Nombre
+TRA_31=Por favor ingrese Dirección 
+TRA_32=Por favor ingrese Número ABA
+TRA_33=Por favor ingrese el Número de Cuenta
+TRA_34=Por favor ingrese Memo ACH
+TRA_35=Favor de ingresar Número de Pagos
+TRA_36=Favor de ingresar Referencia
+TRA_37=Favor de ingresar Descripción
+TRA_38=este pago
+TRA_39=Por favor ingrese el número de Cheque que desea poner una orden de no pago
+TRA_40=El Cheque Inicial debe ser igual o menor que el Cheque Final
+TRA_41=¿Está seguro(a) que desea poner una orden de no pago para la Cuenta Número
+TRA_42=el Pago Masivo
+TRA_43=Por favor, ingrese la Referencia del Solicitante
+TRA_44=Por favor, ingrese el Tipo de Carta de Crédito
+TRA_45=Por favor, ingrese las instrucciones de Confirmación
+TRA_46=Por favor, ingrese la Fecha de Vencimiento
+TRA_47=Por favor, ingrese 'Disponible'
+TRA_48=Está seguro que desea enviar la Carta de Crédito
+TRA_49=Está seguro que desea enviar Enmienda a la Carta de Crédito
+TRA_50=Por favor ingrese Código de Banco del Beneficiario
+TRA_51=Favor seleccionar Beneficiario para Monto ingresado
+TRA_52=Por favor ingrese Cedula de Identidad
+TRA_53=Cuenta de Banco debe de ser 20 dígitos
+TRA_54=Pago no puede ser menor de 1.
+TRA_55=Esta seguro que desea pagar
+TRA_56=a la cuenta
+TRA_57=con cargo a
+TRA_58=¿Esta seguro que desea ejecutar este Proceso?
+TRA_59=Por favor, ingrese
+TRA_60=Dirección de Correo Electrónico Invalida
+TRA_61=Número de Cuenta Invalida
+TRA_62=Número de Cuenta no pertenece al Banco
+TRA_63=Identificación Invalida
+TRA_64=Por favor ingrese
+TRA_65=Número de Celular Invalido
+TRA_66=Se ha alcanzado el máximo de Beneficiarios Permitidos
+TRA_67=Acción a realizar no es valida
+TRA_68=el número de cuenta ya se encuentra registrada
+TRA_69=Número de Cuenta no está registrada
+TRA_70=Banco del beneficiario invalido
+TRA_71=inválido
+TRA_72=Estimado cliente, la cuenta de deposito está bloqueada
+TRA_73=Tipo Identificación no permitida
+TRA_GEN=Estimado cliente, 
+TRA_74=Datos ingresados inválidos
+TRA_75=¿Esta seguro(a) que desea cargar esta imagen?
+TRA_76=Estimado Cliente, Ud. debe de seleccionar un tipo de limite
+TRA_77=Estimado Cliente, Por favor ingrese límites de usuario
+TRA_78=Nuevo PIN y confirmación no coinciden
+TRA_79=Nuevo PIN y PIN anterior deben de ser diferentes
+TRA_80=Estimado Cliente, La longitud de
+TRA_81=es inválida 
+TRA_82=Estimado Cliente, por favor ingrese
+TRA_83=la Identificación de Beneficiario ya está registrada
+TRA_84=Estimado Cliente, Ud. debe de configurar correctamente los montos límites para cada caso. Por favor revise e intente de nuevo.
+TRA_85=Estimado Cliente, Ud. no puede definir límites por arriba de los permitidos por el banco.
+TRA_86=Estimado Cliente, la clave debe de tener 4 dígitos. Por favor verifique e intente de nuevo
+TRA_87=Se ha alcanzado el máximo de Pagos Permitidos
+TRA_88=número de lote invalido
+
+MM_1=Enero
+MM_2=Febrero
+MM_3=Marzo
+MM_4=Abril
+MM_5=Mayo
+MM_6=Junio
+MM_7=Julio
+MM_8=Agosto
+MM_9=Septiembre
+MM_10=Octubre
+MM_11=Noviembre
+MM_12=Diciembre
+
+DD_1=Dom
+DD_2=Lun
+DD_3=Mar
+DD_4=Mie
+DD_5=Jue
+DD_6=Vie
+DD_7=Sab
+
+BS_1=Por favor, ingrese el nombre del Banco de búsqueda
+BS_2=Por favor ingrese la ciudad de búsqueda
+BS_3=Búsqueda de Banco en Venezuela
+BS_4=El Nombre de la Ciudad debe estar en Inglés
+BS_5=Nombre
+BS_6=Ciudad
+BS_7=Código
+BS_8=Por favor ingrese un código a buscar
+BS_9=Búsqueda Código de Banco Fuera de Estados Unidos
+BS_10=El Nombre del País debe estar en Inglés
+BS_11=Por favor ingrese el País de búsqueda
+BS_12=Por favor ingrese un Número de Agencia
+BS_13=Por favor ingrese los datos solicitados y presione el botón Continuar
+###################################################################
+# Menu
+###################################################################
+10_0=Resumen
+11_0=Cuentas
+12_0=Tarjetas de Crédito
+20_0=Transferencias
+20_1=Mismo Titular en Activo
+20_2=Terceros en Activo
+20_3=Mismo Titular Otros Bancos
+20_4=Terceros Otros Bancos
+20_5=Consulta
+20_6=Condiciones Generales
+30_0=Cheques
+30_1=Cheques Oficiales
+30_2=Suspensión de Cheques
+30_3=Pedir Talonario
+30_4=Activar Talonario
+40_0=Pagos
+40_1=Préstamos
+40_2=Tarjeta Bco. Activo
+40_3=Tarjeta Otro Banco
+40_6=Pago Nómina
+40_7=Pago Proveedores
+40_8=Seguimiento de Gestión
+41_0=Afiliaciones
+41_1=Nómina
+41_2=Proveedores
+41_3=Terceros en Activo
+41_4=Mismo Titular Otros Bancos
+41_5=Terceros Otros Bancos
+41_6=Tarjetas Banco Activo 
+41_7=Tarjetas Otros Bancos
+50_0=Pago Programado
+50_1=Beneficiarios
+50_2=Agregar/Autorizar
+50_3=Pagos
+50_4=Modificar
+50_5=Consulta
+60_0=Cartas de Crédito
+60_1=Apertura
+60_2=Enmienda
+60_3=Consulta
+70_0=Inversiones
+70_1=Depósitos a Plazo
+70_2=Cambio Moneda
+75_0=Administración de Claves
+75_1=Cambio Clave de Ingreso
+75_2=Cambio Clave Transaccional
+75_3=Cambio Preguntas de Desafío
+75_4=Cambio PIN Tarjeta
+75_5=Cambio Imagen Antifishing
+80_0=Otros Servicios
+80_1=Datos Empresa
+80_2=Datos Personales
+80_3=Comuníquese con nosotros
+80_4=Cambio de Clave
+80_5=Mensajes
+80_6=Alias
+80_7=Calculadoras
+80_8=Paridad
+80_9=Histórico Transacciones
+80_10=Contrato de Servicio
+80_11=Cambio Clave Transaccional
+80_12=Servicio SMS
+80_13=Cambio Preguntas de Desafío
+80_14=Cambio PIN Tarjeta
+80_15=Cambio Imagen Antifishing
+90_0=Instructivos
+90_1=Instructivo Operativo
+1000_0=Ingreso
+2000_0=Salida
+3000_0=Administración
+3000_1=Datos Empresa
+3000_2=Usuarios
+3000_3=Asignar Clave
+3000_4=Cambiar Estado
+4000_0=Otros Servicios
+4000_1=Cambio Clave
+4000_2=Histórico Transacciones
+4000_3=Instructivo Operativo
+
+###################################################################
+# Menu LOG
+###################################################################
+
+10-0=Resumen de Cuentas
+11-0=Consulta de Cuentas
+12-0=Consulta Tarjetas
+20-0=Transferencias
+20-1=Mismo Titular en Activo
+20-2=Terceros en Activo
+20-3=Mismo Titular Otros Bancos
+20-4=Terceros Otros Bancos
+20-5=Transferencias Consulta
+20-6=Condiciones Generales
+30-0=Cheques
+30-1=Cheques Oficiales
+30-2=Suspensión de Cheques
+30-3=Pedir Talonario
+30-4=Activar Talonario
+40-0=Pagos
+40-1=Pagos de Préstamos
+40-2=Tarjeta Banco Activo
+40-3=Tarjeta Otro Banco
+
+40-6=Pago Nóminas
+40-7=Pago Proveedores
+40-8=Seguimiento de Gestión
+41-0=Afiliación
+41-1=Nómina
+41-2=Proveedores
+41-3=Terceros en Activo
+41-4=Mismo Titular Otros Bancos
+41-5=Terceros Otros Bancos
+41-6=Tarjetas Banco Activo 
+41-7=Tarjetas Otros Bancos
+50-0=Pago Programado
+50-1=Pago Programado Beneficiarios
+50-2=Pago Programado Agregar/Autorizar
+50-3=Pago Programado Pagos
+50-4=Pago Programado Modificar
+50-5=Pago Programado Consulta
+60-0=Cartas de Crédito
+60-1=Apertura Cartas de Crédito 
+60-2=Enmienda  Cartas de Crédito
+60-3=Consulta Cartas de Crédito
+70-0=Inversiones
+70-1=Apertura Depósitos a Plazo
+70-2=Cambio Moneda
+75-0=Administración de Claves
+75-1=Cambio Clave de Ingreso
+75-2=Cambio Clave Transaccional
+75-3=Cambio Preguntas de Desafío
+75-4=Cambio PIN Tarjeta
+75-5=Cambio Imagen Antifishing
+80-0=Otros Servicios
+80-1=Datos Empresa
+80-2=Datos Personales
+80-3=Comuníquese con nosotros
+80-4=Cambio de Clave
+80-5=Mensajes
+80-6=Alias
+80-7=Calculadoras
+80-8=Paridad
+80-9=Histórico Transacciones Usuario
+80-10=Contrato de Servicio
+80-11=Cambio Clave Transaccional
+80-13=Cambio Preguntas de Desafío
+80-14=Cambio PIN Tarjeta
+80-15=Cambio Imagen Antifishing
+80-12=Servicio SMS
+90-0=Instructivos
+90-1=Instructivo Operativo
+1000-0=Ingreso
+2000-0=Salida
+3000-0=Administración
+3000-1=Datos Empresa Master
+3000-2=Usuarios
+3000-3=Asignar Clave Usuario
+3000-4=Cambiar Estado Usuario
+4000-0=Otros Servicios
+4000-1=Cambio Clave
+4000-2=Histórico Transacciones Master
+4000-3=Instructivo Operativo
+###################################################################
+# PAGES TITLE
+###################################################################
+T_1=Banco Activo, Sistema de Banca por Internet
+
+###################################################################
+# BANK PERSONALIZATION BB
+###################################################################
+
+BNK1=Bienvenido a Banco Activo Internet Banking
+BNK2=Sistema de Banca por Internet
+BNK3=Sistema Corporativo de Banca por Internet
+BNK4=Por favor ingrese su usuario, entidad y contraseña
+BNK5=RIF
+BNK23=english
+BNK24=español
+BNK25=Por favor ingrese su usuario y contraseña
+BANK_NAME=Banco Activo
+BNK_STM_FOOT=De conformidad con lo previsto en el articulo 130 de la Ley de Bancos y otras Instituciones Financieras, “Si el titular de la cuenta tiene observaciones que formular al estado de cuenta, deberá, bajo pena de caducidad, hacerlas llegar al banco por escrito y en forma detallada y razonada, dentro de los seis meses siguientes a la fecha de terminaciones del respectivo mes o periodo de liquidación… Si el referido plazo de seis meses transcurre sin que el banco haya recibido ni las observaciones ni la conformidad del cliente o sin que se haya impugnado, por parte del banco o del cliente, el respectivo estado de cuenta, este se tendrá por reconocido en la forma presentada, sus saldos deudores o acreedores serán definitivos en la fecha de la cuenta y las firmas estampadas en los cheques se tendrá como reconocidas por el titular de la cuenta…”
+BNK_CONTACTE=Estimado cliente, en caso de requerir comunicarse con nosotros por favor contáctenos a través del Centro de Atención Activa: 0500-ACTIVAT (2284828) o haciendo click <A HREF="http://www.bancoactivo.com/contacto/" target="contacte">Aquí</A>
